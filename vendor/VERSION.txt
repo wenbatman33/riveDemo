@@ -1,0 +1,2 @@
+@rive-app/webgl2 2.42.0
+https://registry.npmjs.org/@rive-app/webgl2/-/webgl2-2.42.0.tgz

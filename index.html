@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Red Fighter · Rive 動畫展示</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#111216;color:#f5f2ee;font:16px/1.6 system-ui,sans-serif;min-height:100svh;display:grid;place-items:center;padding:28px}
+    main{width:min(100%,780px)}header{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:20px}h1{margin:0;font-size:clamp(25px,5vw,36px);letter-spacing:-.04em}.eyebrow{color:#ef735f;font-size:12px;letter-spacing:.2em}header p{margin:5px 0;color:#aaa}
+    .stage{background:radial-gradient(ellipse at 50% 40%,#343039,#19191e 70%);border:1px solid #363238;border-radius:20px;overflow:hidden;aspect-ratio:1;max-height:65svh;margin:auto;position:relative}canvas{width:100%;height:100%;display:block}.status{position:absolute;bottom:12px;left:16px;color:#c7c1be;font-size:12px;pointer-events:none}
+    .controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:20px 0}button,select{font:inherit;color:inherit;background:#26262e;border:1px solid #48434a;border-radius:9px;padding:9px 15px}button{cursor:pointer;min-width:100px}button:hover{background:#3a3034}button:disabled{opacity:.4;cursor:wait}label{color:#bbb;font-size:14px}select{max-width:100%}footer{color:#8d888e;font-size:13px}a{color:#e4a093}
+    @media(max-width:520px){body{padding:16px}header{display:block}.stage{max-height:none}.controls{gap:9px}select{max-width:220px}}
+  </style>
+</head>
+<body>
+<main>
+  <header><div><div class="eyebrow">RIVE / CHARACTER STUDY</div><h1>Red Fighter</h1><p>呼吸 · 輕微轉身 · 頭巾飄動</p></div></header>
+  <div class="stage"><canvas id="fighter" aria-label="紅衣格鬥角色的骨骼待機動畫"></canvas><div id="status" class="status" role="status">正在載入動畫…</div></div>
+  <div class="controls"><button id="toggle" disabled>暫停</button><button id="restart" disabled>重新播放</button><label>播放內容 <select id="motion" disabled aria-label="選擇播放動畫"></select></label></div>
+  <footer>由 Rive 即時播放，非影片。<a href="./red_fighter_-_skeletal_breathing.riv" download>下載 .riv</a></footer>
+</main>
+<script src="./vendor/rive.js"></script>
+<script>
+const canvas = document.querySelector('#fighter');
+const status = document.querySelector('#status');
+const toggle = document.querySelector('#toggle');
+const restart = document.querySelector('#restart');
+const motion = document.querySelector('#motion');
+let player;
+let choices = [];
+let playing = false;
+
+function showPlaying(value) {
+  playing = value;
+  toggle.textContent = value ? '暫停' : '播放';
+  status.textContent = value ? '播放中' : '已暫停';
+  document.body.dataset.playback = value ? 'playing' : 'paused';
+}
+
+function startSelected() {
+  const choice = choices[Number(motion.value)];
+  if (!choice) return;
+  player.reset({
+    autoplay: true,
+    ...(choice.type === 'state' ? { stateMachines: choice.name } : { animations: choice.name }),
+  });
+  player.resizeDrawingSurfaceToCanvas();
+  showPlaying(true);
+}
+
+if (!window.rive) {
+  status.textContent = '播放器載入失敗，請確認 vendor 資料夾存在。';
+} else {
+  rive.RuntimeLoader.setWasmUrl('./vendor/rive.wasm');
+  player = new rive.Rive({
+    src: './red_fighter_-_skeletal_breathing.riv',
+    canvas,
+    autoplay: false,
+    layout: new rive.Layout({ fit: rive.Fit.Contain, alignment: rive.Alignment.Center }),
+    onLoad: () => {
+      choices = [
+        ...player.animationNames.map(name => ({ name, type: 'animation' })),
+        ...player.stateMachineNames.map(name => ({ name, type: 'state' })),
+      ];
+      for (const [index, choice] of choices.entries()) {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = `${choice.name} · ${choice.type === 'state' ? '狀態機' : '動畫'}`;
+        motion.append(option);
+      }
+      player.resizeDrawingSurfaceToCanvas();
+      document.body.dataset.loaded = 'true';
+      if (!choices.length) {
+        status.textContent = '檔案已載入，但沒有可播放的動畫。';
+        return;
+      }
+      toggle.disabled = restart.disabled = motion.disabled = false;
+      startSelected();
+    },
+    onLoadError: () => {
+      document.body.dataset.loaded = 'error';
+      status.textContent = '動畫載入失敗，請透過 HTTP 網址開啟，並確認 .riv 路徑。';
+    },
+  });
+  new ResizeObserver(() => player.resizeDrawingSurfaceToCanvas()).observe(canvas);
+  toggle.addEventListener('click', () => {
+    if (playing) player.pause();
+    else player.play();
+    showPlaying(!playing);
+  });
+  restart.addEventListener('click', startSelected);
+  motion.addEventListener('change', startSelected);
+  window.addEventListener('pagehide', () => player.cleanup(), { once: true });
+}
+</script>
+</body>
+</html>
