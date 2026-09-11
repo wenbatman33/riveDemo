@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rive Banners 示範（AI 插畫版）</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0f1014; color: #e8e6f0; font: 15px/1.5 system-ui, -apple-system, "PingFang TC", sans-serif; }
+  main { max-width: 1280px; margin: 0 auto; padding: 28px 24px 60px; }
+  h1 { font-size: 26px; font-weight: 600; margin: 0 0 6px; letter-spacing: -.02em; }
+  .sub { color: #9a97ab; margin: 0 0 24px; }
+  .grid { display: grid; grid-template-columns: 340px 1fr; gap: 24px; align-items: start; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: #181a21; border: 1px solid #ffffff14; border-radius: 18px; padding: 16px; }
+  .card h2 { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+  .card p { color: #9a97ab; font-size: 13px; margin: 0 0 12px; }
+  .frame { background: #000; border-radius: 12px; overflow: hidden; }
+  canvas { display: block; width: 100%; }
+  #girl { aspect-ratio: 540 / 960; }
+  #kids { aspect-ratio: 1200 / 630; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  button { font: inherit; font-size: 13px; color: #e8e6f0; background: #262935; border: 1px solid #ffffff1f; border-radius: 999px; padding: 7px 14px; cursor: pointer; }
+  button:hover { background: #333748; }
+  .log { margin-top: 10px; font: 12px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; color: #b7b4c8; background: #111219; border-radius: 10px; padding: 10px 12px; min-height: 64px; max-height: 140px; overflow: auto; white-space: pre-wrap; }
+  code { font-family: ui-monospace, Menlo, monospace; font-size: 12px; background: #ffffff12; padding: 1px 5px; border-radius: 4px; }
+  footer { margin-top: 28px; color: #7d7a90; font-size: 12px; }
+  footer a { color: #b7b4c8; }
+</style>
+</head>
+<body>
+<main>
+  <a href="../#anime-banner">← 所有範例</a><h1>Rive Banners 示範（AI 插畫 + Rive 動畫）</h1>
+  <p class="sub">插畫由 codex image_gen（GPT image）生成，動畫與互動用 <code>rive</code> CLI（RML）製作。左：移動滑鼠她會看向你；右：hover / 按 START、點角色會跳。</p>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Neon Anime Girl（540×960）</h2>
+      <p>呼吸/微擺、眨眼（閉眼變體交叉淡入）、鏡片反光掃過、光暈與粒子；滑鼠位置透過 Joystick 做角色/背景視差注視。</p>
+      <div class="frame"><canvas id="girl"></canvas></div>
+    </section>
+
+    <section class="card">
+      <h2>PlayPals Kids App（1200×630）</h2>
+      <p>State machine + view model：<code>screen</code>（1 首頁 / 2 選單）、<code>hoverStart</code>、<code>downStart</code>、<code>tapBear / tapChick / tapFrog</code>（trigger），並向 host 發出 <code>start</code>／<code>back</code> 事件。</p>
+      <div class="frame"><canvas id="kids"></canvas></div>
+      <div class="controls">
+        <button data-screen="2">JS 切到選單 (screen=2)</button>
+        <button data-screen="1">JS 回首頁 (screen=1)</button>
+        <button data-trigger="tapBear">熊跳</button>
+        <button data-trigger="tapChick">小雞跳</button>
+        <button data-trigger="tapFrog">青蛙跳</button>
+      </div>
+      <div class="log" id="log">事件 log：</div>
+    </section>
+  </div>
+
+  <footer>
+    runtime：<code>@rive-app/webgl2</code>（本頁用 <code>vendor/rive.js</code> 本機副本；正式站可改用 CDN）。
+    靈感來源：<a href="https://rive.app/marketplace/6418-12490-anime-girl/" target="_blank" rel="noopener">Anime Girl / xandercorp</a>、
+    <a href="https://rive.app/marketplace/28765-54494-kidoo-kids-learning-app/" target="_blank" rel="noopener">Kidoo / oneweekwonders</a>（皆為原創重繪，未使用原素材）。
+  </footer>
+</main>
+
+<script src="../vendor/rive.js"></script>
+<script>
+  // 本機 wasm；改用 CDN 時把這行拿掉即可（runtime 會自己去 unpkg 抓）
+  rive.RuntimeLoader.setWasmUrl("../vendor/rive.wasm");
+
+  const layout = new rive.Layout({ fit: rive.Fit.Contain, alignment: rive.Alignment.Center });
+  const log = (msg) => { const el = document.getElementById("log"); el.textContent += "\n" + msg; el.scrollTop = el.scrollHeight; };
+
+  // ---- 動漫少女：只要跑 state machine，滑鼠 move 由檔案內的 listener + joystick 處理 ----
+  const girl = new rive.Rive({
+    src: "./anime-girl-ai.riv",
+    canvas: document.getElementById("girl"),
+    stateMachine: "State Machine 1",
+    autoplay: true,
+    layout,
+    onLoad: () => girl.resizeDrawingSurfaceToCanvas(),
+  });
+
+  // ---- 兒童 App：autoBind 讓 JS 能拿到 view model 實例 ----
+  const kids = new rive.Rive({
+    src: "./kids-app-ai.riv",
+    canvas: document.getElementById("kids"),
+    stateMachine: "State Machine 1",
+    autoplay: true,
+    autoBind: true,
+    layout,
+    onLoad: () => {
+      kids.resizeDrawingSurfaceToCanvas();
+      const vmi = kids.viewModelInstance;
+      log("loaded；view model 屬性：" + vmi.properties.map(p => p.name).join(", "));
+      // 監聽檔案內的 screen 變化（點 START / BACK 時由 listener 改寫）
+      vmi.number("screen").on((v) => log("screen → " + v));
+    },
+  });
+  // 檔案用 ListenerFireEvent 送出的事件會到這裡
+  kids.on(rive.EventType.RiveEvent, (e) => log("RiveEvent: " + e.data.name));
+
+  document.querySelectorAll("[data-screen]").forEach(b => b.onclick = () => { kids.viewModelInstance.number("screen").value = Number(b.dataset.screen); });
+  document.querySelectorAll("[data-trigger]").forEach(b => b.onclick = () => { kids.viewModelInstance.trigger(b.dataset.trigger).trigger(); });
+
+  window.addEventListener("resize", () => { girl.resizeDrawingSurfaceToCanvas(); kids.resizeDrawingSurfaceToCanvas(); });
+</script>
+</body>
+</html>

@@ -35,3 +35,7 @@ index.html 包含頁面與播放設定，直接載入 .riv 並提供播放、暫
 ## 鷹隼守衛
 
 `mummy/` 提供全身換装與待機、跑步、跳躍、攻擊切換。`mummy-guardian.rev` 是可編輯備份，`mummy-guardian.riv` 是網頁播放檔。沿用 ersanakpinarr 的 Mummy 骨骼與動畫（CC BY 4.0），素材與修改限制見 `mummy/REFERENCE.md`。
+
+## Rive Banners
+
+首頁新增 `#anime-banner` 與 `#kids-banner`，使用使用者提供的 `riveBanners/web` 插畫版檔案。`banners/` 保留雙 banner 展示與 PlayPals 資料綁定控制，共用既有的 Rive runtime。
