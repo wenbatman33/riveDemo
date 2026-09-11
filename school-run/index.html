@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>放學以後 · After School</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5efe5;color:#342d27;font:16px/1.6 system-ui,-apple-system,sans-serif}main{max-width:1200px;margin:auto;padding:32px 28px 24px}.top{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid #d9cebd;padding-bottom:14px;font-size:12px;letter-spacing:.12em}.top a{color:#655744;text-decoration:none}header{display:flex;justify-content:space-between;align-items:end;gap:20px;padding:26px 0 22px}h1{font-family:Georgia,"Noto Serif TC",serif;font-weight:500;letter-spacing:.05em;font-size:clamp(34px,5vw,58px);margin:0;line-height:1.2}header p{margin:10px 0 0;color:#82705a}.tag{font-size:12px;border:1px solid #c8b89f;border-radius:30px;padding:7px 14px;white-space:nowrap}.scene{width:min(100%,1000px,85.5svh);aspect-ratio:3/2;margin:auto;overflow:hidden;border-radius:14px;background:#dfc4a1;box-shadow:0 18px 55px #4935161a;position:relative}canvas{display:block;width:100%;height:100%}.loading{position:absolute;inset:0;display:grid;place-items:center;background:#e5d2b7;color:#604b36}.loading[hidden]{display:none}.bar{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:22px 0 15px}.buttons{display:flex;gap:9px;flex-wrap:wrap}button{font:inherit;padding:9px 18px;border:1px solid #c5b59d;border-radius:30px;background:transparent;color:inherit;cursor:pointer}button:hover{background:#e9dfd0}button:disabled{opacity:.4;cursor:wait}button.active{background:#364b3e;color:#fff;border-color:#364b3e}.state{font-size:13px;color:#7a6954}footer{border-top:1px solid #d9cebd;padding-top:15px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#8b7b66;font-size:12px}footer a{color:#63533d;text-underline-offset:4px}.links{display:flex;gap:18px;flex-wrap:wrap}@media(max-width:600px){main{padding:20px 14px}header{padding-top:24px}.tag{display:none}header p{font-size:13px}.bar{gap:12px}.buttons{gap:7px}button{font-size:13px;padding:9px 13px}.top{font-size:10px}.scene{border-radius:9px}}
+.versions{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.versions a{color:#63533d;padding:6px 14px;border:1px solid #c5b59d;border-radius:24px;text-decoration:none;font-size:13px}.versions a[aria-current="page"]{background:#364b3e;color:white}
+</style>
+</head>
+<body><main>
+<div class="top"><span>AFTER SCHOOL / ANIMATION STUDY 02</span><a href="../">← Red Fighter</a></div>
+<header><div><h1>放學以後</h1><p>背上書包，沿著熟悉的街道，跑向回家的路。</p></div><span class="tag">RIVE · 骨骼循環動畫</span></header>
+<nav class="versions" aria-label="動畫版本"><a id="trial-version" href="?version=trial">參考節奏試版</a><a id="fast-version" href="?version=fast">原加速版</a></nav>
+<div class="scene"><canvas id="scene" aria-label="背著書包的小朋友在午後街頭跑步"></canvas><div class="loading" id="loading" role="status">正在準備放學路上的風景…</div></div>
+<div class="bar"><div class="buttons"><button id="travel" class="active" aria-pressed="true" disabled>街頭跑步</button><button id="pose" aria-pressed="false" disabled>查看跑姿</button><button id="toggle" disabled>暫停</button><button id="restart" disabled>重新播放</button></div><span class="state" id="status" role="status">載入中</span></div>
+<footer><span>角色、骨骼、動作與背景皆保留於 Rive 專案。</span><div class="links"><a href="https://editor.rive.app/file/untitled/2572579" target="_blank" rel="noopener">開啟 Rive 編輯</a><a id="backup" href="./school-run.rev" download>可編輯 .rev</a><a id="runtime" href="./school-run.riv" download>播放用 .riv</a></div></footer>
+<p class="state">節奏參考：<a href="https://rive.app/marketplace/12284-23321-5-state-walk-run-jump-box-dock-a-blow/" target="_blank" rel="noopener">5-State Walk / Run / Jump</a>。本版先比較換步與擺臂節奏，骨盆獨立變形仍待調整。</p>
+</main>
+<script src="../vendor/rive.js"></script>
+<script>
+const canvas=document.querySelector('#scene'),loading=document.querySelector('#loading'),statusLabel=document.querySelector('#status');
+const travel=document.querySelector('#travel'),pose=document.querySelector('#pose'),toggle=document.querySelector('#toggle'),restart=document.querySelector('#restart');
+const fastVersion=new URLSearchParams(location.search).get('version')==='fast';
+const fileBase=fastVersion?'school-run-v5-faster':'school-run-reference-quick';
+document.querySelector(fastVersion?'#fast-version':'#trial-version').setAttribute('aria-current','page');
+document.querySelector('#backup').href=`./${fileBase}.rev`;
+document.querySelector('#runtime').href=`./${fileBase}.riv`;
+document.body.dataset.version=fastVersion?'fast':'trial';
+let player,mode='travel',running=false,ready=false;
+function update(){toggle.textContent=running?'暫停':'播放';statusLabel.textContent=(mode==='travel'?`街頭循環 · 約 ${fastVersion?'3':'5.2'} 秒`:`跑姿循環 · 約 ${fastVersion?'0.33':'0.57'} 秒`)+(running?' · 播放中':' · 已暫停');document.body.dataset.playback=running?'playing':'paused';}
+function start(next=mode){if(!ready)return;mode=next;player.reset({autoplay:true,...(mode==='travel'?{stateMachine:'State Machine 1'}:{animations:'Timeline 1'})});player.resizeDrawingSurfaceToCanvas();running=true;travel.classList.toggle('active',mode==='travel');pose.classList.toggle('active',mode==='pose');travel.setAttribute('aria-pressed',String(mode==='travel'));pose.setAttribute('aria-pressed',String(mode==='pose'));update();}
+if(!window.rive){loading.textContent='無法載入播放器，請確認 vendor 資料夾完整。';}else{
+rive.RuntimeLoader.setWasmUrl('../vendor/rive.wasm');
+player=new rive.Rive({src:`./${fileBase}.riv?v=reference-quick-1`,canvas,stateMachine:'State Machine 1',autoplay:false,layout:new rive.Layout({fit:rive.Fit.Contain,alignment:rive.Alignment.Center}),onLoad(){
+ if(!player.animationNames.includes('Timeline 1')||!player.stateMachineNames.includes('State Machine 1')){loading.textContent='動畫名稱不符，請確認匯出的檔案。';return;}
+ ready=true;document.body.dataset.loaded='true';loading.hidden=true;[travel,pose,toggle,restart].forEach(b=>b.disabled=false);start();
+},onLoadError(){document.body.dataset.loaded='error';loading.textContent='動畫載入失敗，請透過 HTTP 開啟並確認 school-run.riv 路徑。';}});
+new ResizeObserver(()=>player.resizeDrawingSurfaceToCanvas()).observe(canvas);
+travel.onclick=()=>start('travel');pose.onclick=()=>start('pose');restart.onclick=()=>start();toggle.onclick=()=>{if(running)player.pause();else player.play();running=!running;update();};window.addEventListener('pagehide',()=>player.cleanup(),{once:true});
+}
+</script>
+</body></html>

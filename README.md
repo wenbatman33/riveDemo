@@ -17,3 +17,9 @@ index.html 包含頁面與播放設定，直接載入 .riv 並提供播放、暫
 .riv 是網頁執行用檔案；修改骨骼與關鍵影格仍要回到 Rive 編輯專案，完成後重新匯出並替換 .riv。
 
 官方文件：https://rive.app/docs/runtimes/web/web-js
+
+## 放學以後
+
+`school-run/` 是含午後街景的小朋友跑步動畫展示，提供原地跑姿與街頭行進兩種模式。目前預設參考節奏試版，跑姿循環約 0.57 秒、行進循環約 5.2 秒，可切換原加速版比較。`school-run/school-run.rev` 是可編輯備份，`school-run/school-run.riv` 是網頁播放檔。
+
+試版保留分層素材與骨骼；骨盆獨立變形仍待調整，詳細版本紀錄見 `school-run/ASSETS.md`。
