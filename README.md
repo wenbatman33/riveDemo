@@ -39,3 +39,7 @@ index.html 包含頁面與播放設定，直接載入 .riv 並提供播放、暫
 ## Rive Banners
 
 首頁新增 `#anime-banner` 與 `#kids-banner`，使用使用者提供的 `riveBanners/web` 插畫版檔案。`banners/` 保留雙 banner 展示與 PlayPals 資料綁定控制，共用既有的 Rive runtime。
+
+## 動畫遊戲封面
+
+`icons.html` 展示使用者提供的九款 Rive 遊戲封面，共用 `game-icons.riv` 與既有 `vendor/` runtime。首頁右上角提供入口；封面點擊目前只記錄事件，未連接實際遊戲。

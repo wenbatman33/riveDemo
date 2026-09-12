@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>遊戲大廳 · Rive 動畫封面</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0b0b0f; color: #e9e6f0; font: 15px/1.5 system-ui, -apple-system, "PingFang TC", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 20px 60px; }
+  h1 { font-size: 24px; font-weight: 600; margin: 0 0 4px; letter-spacing: -.02em; }
+  .sub { color: #9a97ab; margin: 0 0 22px; font-size: 13px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 200px); gap: 20px; justify-content: center; }
+  @media (max-width: 700px) { .grid { grid-template-columns: repeat(auto-fill, 200px); } }
+  .tile { position: relative; width: 200px; height: 200px; border-radius: 18px; overflow: hidden; background: #16161d; box-shadow: 0 6px 24px #0009; cursor: pointer; }
+  .tile canvas { width: 200px; height: 200px; display: block; }
+  .tile:focus-visible { outline: 3px solid #ffd54a; }
+  footer { margin-top: 26px; color: #7d7a90; font-size: 12px; text-align: center; }
+  footer code { font-family: ui-monospace, Menlo, monospace; background: #ffffff12; padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <a href="./" style="display:inline-block;margin-bottom:16px;color:#cbbce8">← 返回範例首頁</a>
+  <h1>遊戲大廳</h1>
+  <p class="sub">9 款遊戲封面皆為 Rive 動畫 icon（200×200），同一個 <code>game-icons.riv</code> 內 9 個 artboard；滑鼠移上去會放大。</p>
+  <div class="grid" id="grid"></div>
+  <footer>載入一次 .riv 後共用 buffer 建立 9 個播放器；點擊 icon 會觸發 <code>console.log</code>（可換成開啟遊戲）。</footer>
+</main>
+
+<script src="./vendor/rive.js"></script>
+<script>
+  rive.RuntimeLoader.setWasmUrl("./vendor/rive.wasm");
+  // artboard 名稱與 icons/gen.py 內 GAMES 一致
+  const games = [
+    { id: "vampire", title: "惡魔血域" }, { id: "fire", title: "烈焰一路發" }, { id: "egypt", title: "戰神賽特" },
+    { id: "zeus", title: "奧林帕斯財運" }, { id: "aztec", title: "阿茲特克狂潮" }, { id: "west", title: "荒野槍客2" },
+    { id: "tiger", title: "虎小妹" }, { id: "cards", title: "奇蹟王牌" }, { id: "mahjong", title: "美女麻將" },
+  ];
+  const grid = document.getElementById("grid");
+  const layout = new rive.Layout({ fit: rive.Fit.Cover, alignment: rive.Alignment.Center });
+  const players = [];
+  fetch("./game-icons.riv").then(r => r.arrayBuffer()).then(buffer => {
+    for (const g of games) {
+      const tile = document.createElement("div"); tile.className = "tile"; tile.tabIndex = 0; tile.setAttribute("aria-label", g.title);
+      const canvas = document.createElement("canvas"); tile.append(canvas); grid.append(tile);
+      const p = new rive.Rive({
+        buffer, canvas, artboard: g.id, stateMachines: "State Machine 1", autoplay: true, layout,
+        onLoad: () => p.resizeDrawingSurfaceToCanvas(),
+      });
+      tile.onclick = () => console.log("open game:", g.id, g.title);
+      players.push(p);
+    }
+  });
+  window.addEventListener("resize", () => players.forEach(p => p.resizeDrawingSurfaceToCanvas()));
+</script>
+</body>
+</html>
