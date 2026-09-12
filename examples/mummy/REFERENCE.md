@@ -24,3 +24,6 @@ Feet, hip fabric and staff use rigid parent-bone attachment: their old image mes
 Exports: mummy-guardian.rev is the editable Rive backup; mummy-guardian.riv is the web runtime export.
 
 Asset prompt family (built-in imagegen): match the original generated falcon mummy guardian reference, lapis-blue and antique-gold armor, ivory wrapped bandages, dark teal skin, hand-painted game illustration, three-quarter right-facing view. Generate each isolated torso / upper arm / forearm / thigh / shin / boot / hand / hip skirt / falcon staff, transparent background, tightly framed, no other body parts, text or UI. PNGs are stored in assets and assets/parts; some matching limb artwork is reused for both sides.
+
+
+檔案結構更新：正式播放檔為 animation.riv；可編輯備份為 source/editable.rev；歷史檔名移至 archive/。本文較早的檔名為製作過程紀錄。

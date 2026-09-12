@@ -1,45 +1,61 @@
-# Rive 網頁示範
+# Motion Library
 
-在此資料夾啟動靜態伺服器：
+統一入口的 Rive 展示專案，使用原生 HTML、CSS 與 JavaScript modules，無需安裝套件或打包。
 
-```sh
-git clone https://github.com/wenbatman33/riveDemo.git
-cd riveDemo
-python3 -m http.server 8766
+## 開啟
+
+在本目錄執行 `python3 -m http.server 8767 --bind 127.0.0.1`，開啟 http://127.0.0.1:8767/ 。請勿使用 file:// 開啟。
+
+## 檔案結構
+
+```text
+index.html                 唯一展示入口與共用頁面結構
+app/
+  main.js                  共用播放器、切換、控制與生命週期
+  styles.css               共用樣式與響應式版面
+  catalog.json             所有展示的清單與播放設定
+examples/
+  fighter/animation.riv
+  school-run/
+  mummy/
+  anime-banner/
+  kids-banner/
+  game-icons/
+    animation.riv          正式播放檔
+vendor/                    共用 Rive JS / WASM（只保留一份）
+archive/legacy-pages/      重整前的 HTML 文字備份，僅供歷史參考
+scripts/validate.mjs       路徑、清單與搬移完整性檢查
 ```
 
-瀏覽 http://localhost:8766 。請透過 HTTP 開啟，不要直接雙擊 HTML。
+各範例採用相同分類：`animation.riv` 為正式播放檔；`source/editable.rev` 為可編輯備份（若有提供）；`assets/` 為製作用素材；`archive/` 為歷史版本。未接入展示的原始 `animte_girl/anime_girl.riv` 保留在 `examples/anime-banner/archive/imported-original/`，沒有當作插畫版覆蓋。
 
-部署時把整個儲存庫的內容放到靜態網站，保持相對路徑即可。播放器 JS、WASM 與角色檔都在本機，不需要 CDN。使用 @rive-app/webgl2 2.42.0。
+歷史 HTML 以 .html.txt 保存，不是可運行的入口，保留當時內容和舊路徑作參考。原 `fighter.html`、`icons.html`、`school-run/`、`mummy/`、`banners/` 頁面已整合到首頁，請更新書籤。首頁 hash 連結維持有效。
 
-index.html 包含頁面與播放設定，直接載入 .riv 並提供播放、暫停與重新播放，無須額外的 player.js。播放清單由檔案內的動畫及狀態機自動讀取，預設播放第一個動畫。響應式 canvas 使用 ResizeObserver 更新解析度。
+## 範例網址
 
-.riv 是網頁執行用檔案；修改骨骼與關鍵影格仍要回到 Rive 編輯專案，完成後重新匯出並替換 .riv。
+| 範例 | 網址 |
+| --- | --- |
+| Red Fighter | `/#fighter` |
+| 放學以後 | `/#school-run` |
+| 鷹隼守衛 | `/#mummy` |
+| Neon Anime Girl | `/#anime-banner` |
+| PlayPals | `/#kids-banner` |
+| 九款遊戲封面 | `/#game-icons` |
 
-官方文件：https://rive.app/docs/runtimes/web/web-js
+放學跑步的參考節奏與原加速版本在「播放內容」中切換。PlayPals 的選單與角色 trigger 在共用控制列操作。遊戲封面共用一次下載的 buffer；點擊只顯示選取狀態，沒有實際遊戲或交易。
 
-## 放學以後
+## 新增展示
 
-`school-run/` 是含午後街景的小朋友跑步動畫展示，提供原地跑姿與街頭行進兩種模式。目前預設參考節奏試版，跑姿循環約 0.57 秒、行進循環約 5.2 秒，可切換原加速版比較。`school-run/school-run.rev` 是可編輯備份，`school-run/school-run.riv` 是網頁播放檔。
+1. 建立 `examples/<id>/`，放入 `animation.riv`；有備份或素材時分別放入 `source/`、`assets/`。
+2. 在 `app/catalog.json` 加入一筆設定。無需複製 HTML 或播放器 JS。
+3. 執行 `node scripts/validate.mjs`，透過首頁確認動畫與互動。
 
-試版保留分層素材與骨骼；骨盆獨立變形仍待調整，詳細版本紀錄見 `school-run/ASSETS.md`。
+基本欄位：`id`、`title`、`description`、`short`、`src`。可選：`artboard`、`editable`、`note`、`autoBind`。`choices` 指定動畫或狀態機（`name`、`type`、`label`），也可用 `src` 指定版本檔。`extraAnimations` 指定同時播放的附加動畫。未提供 choices 時，自動讀取檔案內的動畫名稱。
 
-## 範例首頁
+`controls` 可宣告 `{ "label": "進入選單", "property": "screen", "value": 2 }` 或 `{ "label": "熊跳", "trigger": "tapBear" }`，搭配 autoBind。多畫板展示使用 `kind: "grid"`，並以 `items` 宣告每個畫板的 id 與 title。
 
-首頁整合 Red Fighter、放學跑步與鷹隼守衛，可使用底部卡片、左右按鈕或鍵盤方向鍵切換。網址 `#fighter`、`#school-run`、`#mummy` 可直接開啟指定範例。切換會釋放前一個 Rive 播放器，避免背景持續播放；支援減少動態效果偏好。
+## 素材與已知限制
 
-原格鬥展示保留於 `fighter.html`。新增作品時，在 `index.html` 的 `demos` 清單新增 id、標題、說明、riv 路徑與完整範例網址；首頁自動建立卡片與編號。可用 choices 指定顯示的動畫或狀態機。首頁轉場使用網頁動畫，沒有改動各 Rive 檔案。
+鷹隼守衛沿用 ersanakpinarr 的 Mummy 骨骼與動畫（CC BY 4.0）。腳、裙甲、法杖為剛性骨骼跟隨；原預覽縮圖仍保留。詳見 `examples/mummy/REFERENCE.md`。
 
-選單互動參考 Journey by irmate210：https://rive.app/marketplace/23461-43911-journey/ 。未複製其插畫或 Rive 素材。
-
-## 鷹隼守衛
-
-`mummy/` 提供全身換装與待機、跑步、跳躍、攻擊切換。`mummy-guardian.rev` 是可編輯備份，`mummy-guardian.riv` 是網頁播放檔。沿用 ersanakpinarr 的 Mummy 骨骼與動畫（CC BY 4.0），素材與修改限制見 `mummy/REFERENCE.md`。
-
-## Rive Banners
-
-首頁新增 `#anime-banner` 與 `#kids-banner`，使用使用者提供的 `riveBanners/web` 插畫版檔案。`banners/` 保留雙 banner 展示與 PlayPals 資料綁定控制，共用既有的 Rive runtime。
-
-## 動畫遊戲封面
-
-`icons.html` 展示使用者提供的九款 Rive 遊戲封面，共用 `game-icons.riv` 與既有 `vendor/` runtime。首頁右上角提供入口；封面點擊目前只記錄事件，未連接實際遊戲。
+放學跑步的骨盆独立變形仍待調整，製作紀錄見 `examples/school-run/ASSETS.md`。Banner 與九款遊戲封面來自使用者提供的 riveBanners/web。Banner 原頁註明靈感來源 Anime Girl / xandercorp 與 Kidoo / oneweekwonders，插畫為原創重繪。首頁切換互動參考 Journey / irmate210。

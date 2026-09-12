@@ -72,3 +72,6 @@ school-run-v5-faster.riv / school-run-v5-faster.rev 與目前 school-run.riv / s
 ## Reference quick +10%
 
 試版步頻由 1.6 提高至 1.76，行進由 1.4 提高至 1.54，均加快 10%。循環約 0.568 秒／5.195 秒；關鍵影格姿勢保留。匯出 school-run-reference-quick.riv/.rev，更新標準檔與網頁試版。
+
+
+檔案結構更新：正式播放檔為 animation.riv；可編輯備份為 source/editable.rev；歷史檔名移至 archive/。本文較早的檔名為製作過程紀錄。

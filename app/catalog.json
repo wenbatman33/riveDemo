@@ -1,0 +1,188 @@
+[
+  {
+    "id": "fighter",
+    "title": "Red Fighter",
+    "description": "呼吸、轉身，與隨風擺動的頭巾。",
+    "short": "角色待機 · 骨骼動畫",
+    "src": "./examples/fighter/animation.riv",
+    "theme": "fighter",
+    "note": "格鬥角色的待機動作研究。"
+  },
+  {
+    "id": "school-run",
+    "title": "放學以後",
+    "description": "背起書包，沿著夕陽下的街道奔跑。",
+    "short": "街頭跑步 · 場景循環",
+    "src": "./examples/school-run/animation.riv",
+    "theme": "school",
+    "note": "目前為節奏試版，骨盆獨立變形仍待調整。",
+    "choices": [
+      {
+        "name": "State Machine 1",
+        "type": "state",
+        "label": "街頭跑步"
+      },
+      {
+        "name": "Timeline 1",
+        "type": "animation",
+        "label": "原地跑姿"
+      },
+      {
+        "name": "State Machine 1",
+        "type": "state",
+        "label": "原加速版 · 街頭跑步",
+        "src": "./examples/school-run/archive/school-run-v5-faster.riv",
+        "editable": "./examples/school-run/archive/school-run-v5-faster.rev"
+      },
+      {
+        "name": "Timeline 1",
+        "type": "animation",
+        "label": "原加速版 · 原地跑姿",
+        "src": "./examples/school-run/archive/school-run-v5-faster.riv",
+        "editable": "./examples/school-run/archive/school-run-v5-faster.rev"
+      }
+    ],
+    "editable": "./examples/school-run/source/editable.rev"
+  },
+  {
+    "id": "mummy",
+    "title": "鷹隼守衛",
+    "description": "全身換裝，沿用 Mummy 的跑步、跳躍與攻擊動作。",
+    "short": "整身換圖 · 動作切換",
+    "src": "./examples/mummy/animation.riv",
+    "artboard": "mummy",
+    "theme": "mummy",
+    "note": "角色主體已換裝；畫布左側縮圖保留原範例。原作：ersanakpinarr / Mummy（CC BY 4.0）。",
+    "choices": [
+      {
+        "name": "Idle",
+        "type": "animation",
+        "label": "待機"
+      },
+      {
+        "name": "Run",
+        "type": "animation",
+        "label": "跑步"
+      },
+      {
+        "name": "Jump",
+        "type": "animation",
+        "label": "跳躍"
+      },
+      {
+        "name": "Attack",
+        "type": "animation",
+        "label": "攻擊"
+      }
+    ],
+    "editable": "./examples/mummy/source/editable.rev",
+    "extraAnimations": [
+      "Staff"
+    ]
+  },
+  {
+    "id": "anime-banner",
+    "title": "Neon Anime Girl",
+    "description": "霓虹少女的呼吸、眨眼與滑鼠視差互動。",
+    "short": "直式 Banner · 滑鼠互動",
+    "src": "./examples/anime-banner/animation.riv",
+    "theme": "banner",
+    "note": "移動滑鼠，觀察角色與背景的視差變化。",
+    "autoBind": false,
+    "choices": [
+      {
+        "name": "State Machine 1",
+        "type": "state",
+        "label": "互動動畫"
+      }
+    ]
+  },
+  {
+    "id": "kids-banner",
+    "title": "PlayPals",
+    "description": "繽紛的兒童互動 Banner，點 START 探索角色選單。",
+    "short": "橫式 Banner · 點擊互動",
+    "src": "./examples/kids-banner/animation.riv",
+    "theme": "banner",
+    "note": "點 START／BACK 切換畫面，點小動物讓牠們跳躍。",
+    "autoBind": true,
+    "choices": [
+      {
+        "name": "State Machine 1",
+        "type": "state",
+        "label": "互動動畫"
+      }
+    ],
+    "controls": [
+      {
+        "label": "進入選單",
+        "property": "screen",
+        "value": 2
+      },
+      {
+        "label": "返回首頁",
+        "property": "screen",
+        "value": 1
+      },
+      {
+        "label": "熊跳",
+        "trigger": "tapBear"
+      },
+      {
+        "label": "小雞跳",
+        "trigger": "tapChick"
+      },
+      {
+        "label": "青蛙跳",
+        "trigger": "tapFrog"
+      }
+    ]
+  },
+  {
+    "id": "game-icons",
+    "title": "遊戲大廳",
+    "description": "九款動畫封面，在同一頁探索。",
+    "short": "九款封面 · Rive 動畫",
+    "src": "./examples/game-icons/animation.riv",
+    "kind": "grid",
+    "note": "移到封面上可查看互動；點擊僅顯示選取狀態，尚未連接實際遊戲。",
+    "items": [
+      {
+        "id": "vampire",
+        "title": "惡魔血域"
+      },
+      {
+        "id": "fire",
+        "title": "烈焰一路發"
+      },
+      {
+        "id": "egypt",
+        "title": "戰神賽特"
+      },
+      {
+        "id": "zeus",
+        "title": "奧林帕斯財運"
+      },
+      {
+        "id": "aztec",
+        "title": "阿茲特克狂潮"
+      },
+      {
+        "id": "west",
+        "title": "荒野槍客2"
+      },
+      {
+        "id": "tiger",
+        "title": "虎小妹"
+      },
+      {
+        "id": "cards",
+        "title": "奇蹟王牌"
+      },
+      {
+        "id": "mahjong",
+        "title": "美女麻將"
+      }
+    ]
+  }
+]
