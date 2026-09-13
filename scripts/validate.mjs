@@ -7,7 +7,7 @@ const ids = new Set();
 for (const d of catalog) {
   assert(!ids.has(d.id), `Duplicate id: ${d.id}`); ids.add(d.id);
   assert(d.title && d.src, `Missing fields: ${d.id}`);
-  for (const file of [d.src, d.editable, ...(d.choices || []).flatMap(c => [c.src, c.editable])].filter(Boolean)) {
+  for (const file of [d.src, d.editable, d.controller, ...(d.choices || []).flatMap(c => [c.src, c.editable])].filter(Boolean)) {
     const resolved = path.resolve(root, file);
     assert(resolved.startsWith(root + path.sep), `Path outside project: ${file}`);
     assert(fs.statSync(resolved).size > 0, `Empty file: ${file}`);

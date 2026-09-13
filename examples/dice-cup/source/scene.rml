@@ -1,0 +1,1516 @@
+<Rive version="1" kind="fragment">
+  <Artboard name="DiceCup" id="0:112" width="1200" height="800" clip="true" viewModelId="0:101" viewModelInstanceId="0:102" defaultStateMachineId="0:107">
+    <Image id="0:113" name="Cup" assetId="0:108" x="600" y="380" scaleX="0.4" scaleY="0.4" originX="0.5" originY="0.5" />
+    <Node name="DiceResults" id="0:114" opacity="0">
+      <Node name="Die3" id="0:247" x="590" y="535" rotation="0">
+        <Node name="Face1" id="0:248" opacity="0">
+          <Image name="TopPip1" id="0:249" assetId="0:110" x="-1.725" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:250" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:251" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:252" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:253" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:254" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face2" id="0:255" opacity="0">
+          <Image name="TopPip1" id="0:256" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:257" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:258" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:259" assetId="0:110" x="-16.1" y="8.625" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip3" id="0:260" assetId="0:110" x="-39.1" y="4.6000000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip4" id="0:261" assetId="0:110" x="-16.1" y="20.7" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip5" id="0:262" assetId="0:110" x="-39.1" y="16.675" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip6" id="0:263" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:264" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:265" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:266" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face3" id="0:267" opacity="1">
+          <Image name="TopPip1" id="0:268" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:269" assetId="0:110" x="-1.725" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:270" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:271" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:272" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:273" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:274" assetId="0:110" x="33.35" y="-7.4750000000000005" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:275" assetId="0:110" x="10.35" y="20.7" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip4" id="0:276" assetId="0:110" x="33.35" y="4.6000000000000005" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip5" id="0:277" assetId="0:110" x="10.35" y="32.775" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip6" id="0:278" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face4" id="0:279" opacity="0">
+          <Image name="TopPip1" id="0:280" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:281" assetId="0:110" x="-1.725" y="-41.975" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:282" assetId="0:110" x="-1.725" y="-10.925" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip4" id="0:283" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:284" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:285" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:286" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face5" id="0:287" opacity="0">
+          <Image name="TopPip1" id="0:288" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:289" assetId="0:110" x="-1.725" y="-41.975" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:290" assetId="0:110" x="-1.725" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip4" id="0:291" assetId="0:110" x="-1.725" y="-10.925" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip5" id="0:292" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:293" assetId="0:110" x="-27.6" y="12.65" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:294" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:295" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:296" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face6" id="0:297" opacity="0">
+          <Image name="TopPip1" id="0:298" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:299" assetId="0:110" x="-1.725" y="-41.975" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:300" assetId="0:110" x="-13.8" y="-18.6875" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip4" id="0:301" assetId="0:110" x="10.35" y="-34.2125" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip5" id="0:302" assetId="0:110" x="-1.725" y="-10.925" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip6" id="0:303" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:304" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:305" assetId="0:110" x="-16.1" y="8.625" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip3" id="0:306" assetId="0:110" x="-27.6" y="12.65" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip4" id="0:307" assetId="0:110" x="-39.1" y="16.675" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip5" id="0:308" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:309" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:310" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:311" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Image name="IvoryDie" id="0:312" assetId="0:109" scaleX="0.115" scaleY="0.115" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Die2" id="0:181" x="680" y="463" rotation="0">
+        <Node name="Face1" id="0:182" opacity="0">
+          <Image name="TopPip1" id="0:183" assetId="0:110" x="-1.725" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:184" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:185" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:186" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:187" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:188" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face2" id="0:189" opacity="1">
+          <Image name="TopPip1" id="0:190" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:191" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:192" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:193" assetId="0:110" x="-16.1" y="8.625" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip3" id="0:194" assetId="0:110" x="-39.1" y="4.6000000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip4" id="0:195" assetId="0:110" x="-16.1" y="20.7" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip5" id="0:196" assetId="0:110" x="-39.1" y="16.675" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip6" id="0:197" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:198" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:199" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:200" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face3" id="0:201" opacity="0">
+          <Image name="TopPip1" id="0:202" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:203" assetId="0:110" x="-1.725" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:204" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:205" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:206" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:207" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:208" assetId="0:110" x="33.35" y="-7.4750000000000005" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:209" assetId="0:110" x="10.35" y="20.7" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip4" id="0:210" assetId="0:110" x="33.35" y="4.6000000000000005" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip5" id="0:211" assetId="0:110" x="10.35" y="32.775" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip6" id="0:212" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face4" id="0:213" opacity="0">
+          <Image name="TopPip1" id="0:214" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:215" assetId="0:110" x="-1.725" y="-41.975" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:216" assetId="0:110" x="-1.725" y="-10.925" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip4" id="0:217" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:218" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:219" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:220" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face5" id="0:221" opacity="0">
+          <Image name="TopPip1" id="0:222" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:223" assetId="0:110" x="-1.725" y="-41.975" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:224" assetId="0:110" x="-1.725" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip4" id="0:225" assetId="0:110" x="-1.725" y="-10.925" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip5" id="0:226" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:227" assetId="0:110" x="-27.6" y="12.65" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:228" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:229" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:230" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face6" id="0:231" opacity="0">
+          <Image name="TopPip1" id="0:232" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:233" assetId="0:110" x="-1.725" y="-41.975" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:234" assetId="0:110" x="-13.8" y="-18.6875" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip4" id="0:235" assetId="0:110" x="10.35" y="-34.2125" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip5" id="0:236" assetId="0:110" x="-1.725" y="-10.925" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip6" id="0:237" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:238" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:239" assetId="0:110" x="-16.1" y="8.625" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip3" id="0:240" assetId="0:110" x="-27.6" y="12.65" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip4" id="0:241" assetId="0:110" x="-39.1" y="16.675" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip5" id="0:242" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:243" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:244" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:245" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Image name="IvoryDie" id="0:246" assetId="0:109" scaleX="0.115" scaleY="0.115" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Die1" id="0:115" x="530" y="452" rotation="0">
+        <Node name="Face1" id="0:116" opacity="1">
+          <Image name="TopPip1" id="0:117" assetId="0:110" x="-1.725" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:118" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:119" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:120" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:121" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:122" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face2" id="0:123" opacity="0">
+          <Image name="TopPip1" id="0:124" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:125" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:126" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:127" assetId="0:110" x="-16.1" y="8.625" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip3" id="0:128" assetId="0:110" x="-39.1" y="4.6000000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip4" id="0:129" assetId="0:110" x="-16.1" y="20.7" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip5" id="0:130" assetId="0:110" x="-39.1" y="16.675" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip6" id="0:131" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:132" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:133" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:134" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face3" id="0:135" opacity="0">
+          <Image name="TopPip1" id="0:136" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:137" assetId="0:110" x="-1.725" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:138" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:139" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:140" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:141" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:142" assetId="0:110" x="33.35" y="-7.4750000000000005" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:143" assetId="0:110" x="10.35" y="20.7" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip4" id="0:144" assetId="0:110" x="33.35" y="4.6000000000000005" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip5" id="0:145" assetId="0:110" x="10.35" y="32.775" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip6" id="0:146" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face4" id="0:147" opacity="0">
+          <Image name="TopPip1" id="0:148" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:149" assetId="0:110" x="-1.725" y="-41.975" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:150" assetId="0:110" x="-1.725" y="-10.925" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip4" id="0:151" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:152" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:153" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:154" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face5" id="0:155" opacity="0">
+          <Image name="TopPip1" id="0:156" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:157" assetId="0:110" x="-1.725" y="-41.975" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:158" assetId="0:110" x="-1.725" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip4" id="0:159" assetId="0:110" x="-1.725" y="-10.925" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip5" id="0:160" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:161" assetId="0:110" x="-27.6" y="12.65" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:162" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:163" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:164" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Node name="Face6" id="0:165" opacity="0">
+          <Image name="TopPip1" id="0:166" assetId="0:110" x="-25.875" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip2" id="0:167" assetId="0:110" x="-1.725" y="-41.975" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip3" id="0:168" assetId="0:110" x="-13.8" y="-18.6875" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip4" id="0:169" assetId="0:110" x="10.35" y="-34.2125" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip5" id="0:170" assetId="0:110" x="-1.725" y="-10.925" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="TopPip6" id="0:171" assetId="0:110" x="22.425" y="-26.450000000000003" rotation="0.0" scaleX="0.014255272708720798" scaleY="0.009164103884177656" originX="0.5" originY="0.5" />
+          <Image name="LeftPip1" id="0:172" assetId="0:110" x="-39.1" y="-7.4750000000000005" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip2" id="0:173" assetId="0:110" x="-16.1" y="8.625" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip3" id="0:174" assetId="0:110" x="-27.6" y="12.65" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip4" id="0:175" assetId="0:110" x="-39.1" y="16.675" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="LeftPip5" id="0:176" assetId="0:110" x="-16.1" y="32.775" rotation="0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip1" id="0:177" assetId="0:110" x="10.35" y="8.625" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip2" id="0:178" assetId="0:110" x="21.85" y="12.65" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+          <Image name="RightPip3" id="0:179" assetId="0:110" x="33.35" y="16.675" rotation="-0.9855767432102632" scaleX="0.013766406454196913" scaleY="0.007029285407340178" originX="0.5" originY="0.5" />
+        </Node>
+        <Image name="IvoryDie" id="0:180" assetId="0:109" scaleX="0.115" scaleY="0.115" originX="0.5" originY="0.5" />
+      </Node>
+    </Node>
+    <Image name="Table" id="0:313" assetId="0:111" x="600" y="400" scaleX="0.78125" scaleY="0.78125" originX="0.5" originY="0.5" />
+    <LinearAnimation id="0:314" name="Closed" duration="60" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:114" id="0:360">
+        <KeyedProperty propertyKey="18" id="0:361">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:362">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:363" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:364">
+        <KeyedProperty propertyKey="13" id="0:365">
+          <KeyFrameDouble frame="0" value="600" interpolationType="cubic" id="0:366">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:367" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:368">
+        <KeyedProperty propertyKey="14" id="0:369">
+          <KeyFrameDouble frame="0" value="380" interpolationType="cubic" id="0:370">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:371" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:372">
+        <KeyedProperty propertyKey="15" id="0:373">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:374">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:375" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:376">
+        <KeyedProperty propertyKey="16" id="0:377">
+          <KeyFrameDouble frame="0" value="0.4" interpolationType="cubic" id="0:378">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:379" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:380">
+        <KeyedProperty propertyKey="17" id="0:381">
+          <KeyFrameDouble frame="0" value="0.4" interpolationType="cubic" id="0:382">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:383" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:315" name="Shake" duration="30" fps="60" loopValue="loop">
+      <KeyedObject objectId="0:114" id="0:384">
+        <KeyedProperty propertyKey="18" id="0:385">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:386">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:387" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:388">
+        <KeyedProperty propertyKey="13" id="0:389">
+          <KeyFrameDouble frame="0" value="600" interpolationType="cubic" id="0:390">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:391" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="5" value="580" interpolationType="cubic" id="0:392">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:393" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="10" value="625" interpolationType="cubic" id="0:394">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:395" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="15" value="578" interpolationType="cubic" id="0:396">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:397" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="20" value="622" interpolationType="cubic" id="0:398">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:399" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="25" value="590" interpolationType="cubic" id="0:400">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:401" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="30" value="600" interpolationType="cubic" id="0:402">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:403" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:404">
+        <KeyedProperty propertyKey="14" id="0:405">
+          <KeyFrameDouble frame="0" value="380" interpolationType="cubic" id="0:406">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:407" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="5" value="360" interpolationType="cubic" id="0:408">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:409" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="10" value="375" interpolationType="cubic" id="0:410">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:411" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="15" value="350" interpolationType="cubic" id="0:412">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:413" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="20" value="372" interpolationType="cubic" id="0:414">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:415" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="25" value="365" interpolationType="cubic" id="0:416">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:417" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="30" value="380" interpolationType="cubic" id="0:418">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:419" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:420">
+        <KeyedProperty propertyKey="15" id="0:421">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:422">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:423" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="5" value="-0.12" interpolationType="cubic" id="0:424">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:425" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="10" value="0.14" interpolationType="cubic" id="0:426">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:427" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="15" value="-0.13" interpolationType="cubic" id="0:428">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:429" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="20" value="0.13" interpolationType="cubic" id="0:430">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:431" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="25" value="-0.07" interpolationType="cubic" id="0:432">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:433" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="30" value="0" interpolationType="cubic" id="0:434">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:435" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:436">
+        <KeyedProperty propertyKey="16" id="0:437">
+          <KeyFrameDouble frame="0" value="0.4" interpolationType="cubic" id="0:438">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:439" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:440">
+        <KeyedProperty propertyKey="17" id="0:441">
+          <KeyFrameDouble frame="0" value="0.4" interpolationType="cubic" id="0:442">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:443" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:316" name="Open" duration="65" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:114" id="0:444">
+        <KeyedProperty propertyKey="18" id="0:445">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:446">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:447" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="12" value="0" interpolationType="cubic" id="0:448">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:449" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="18" value="1" interpolationType="cubic" id="0:450">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:451" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:452">
+        <KeyedProperty propertyKey="13" id="0:453">
+          <KeyFrameDouble frame="0" value="600" interpolationType="cubic" id="0:454">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:455" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="22" value="615" interpolationType="cubic" id="0:456">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:457" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="65" value="680" interpolationType="cubic" id="0:458">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:459" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:460">
+        <KeyedProperty propertyKey="14" id="0:461">
+          <KeyFrameDouble frame="0" value="380" interpolationType="cubic" id="0:462">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:463" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="22" value="120" interpolationType="cubic" id="0:464">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:465" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="65" value="-300" interpolationType="cubic" id="0:466">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:467" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:468">
+        <KeyedProperty propertyKey="15" id="0:469">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:470">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:471" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="22" value="-0.08" interpolationType="cubic" id="0:472">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:473" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="65" value="0.14" interpolationType="cubic" id="0:474">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:475" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:476">
+        <KeyedProperty propertyKey="16" id="0:477">
+          <KeyFrameDouble frame="0" value="0.4" interpolationType="cubic" id="0:478">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:479" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="65" value="0.4" interpolationType="cubic" id="0:480">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:481" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:113" id="0:482">
+        <KeyedProperty propertyKey="17" id="0:483">
+          <KeyFrameDouble frame="0" value="0.4" interpolationType="cubic" id="0:484">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:485" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="65" value="0.4" interpolationType="cubic" id="0:486">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:487" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:317" name="Die1_1" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:116" id="0:488">
+        <KeyedProperty propertyKey="18" id="0:489">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:490">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:491" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:123" id="0:492">
+        <KeyedProperty propertyKey="18" id="0:493">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:494">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:495" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:135" id="0:496">
+        <KeyedProperty propertyKey="18" id="0:497">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:498">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:499" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:147" id="0:500">
+        <KeyedProperty propertyKey="18" id="0:501">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:502">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:503" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:155" id="0:504">
+        <KeyedProperty propertyKey="18" id="0:505">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:506">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:507" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:165" id="0:508">
+        <KeyedProperty propertyKey="18" id="0:509">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:510">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:511" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:318" name="Die1_2" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:116" id="0:512">
+        <KeyedProperty propertyKey="18" id="0:513">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:514">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:515" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:123" id="0:516">
+        <KeyedProperty propertyKey="18" id="0:517">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:518">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:519" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:135" id="0:520">
+        <KeyedProperty propertyKey="18" id="0:521">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:522">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:523" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:147" id="0:524">
+        <KeyedProperty propertyKey="18" id="0:525">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:526">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:527" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:155" id="0:528">
+        <KeyedProperty propertyKey="18" id="0:529">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:530">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:531" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:165" id="0:532">
+        <KeyedProperty propertyKey="18" id="0:533">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:534">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:535" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:319" name="Die1_3" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:116" id="0:536">
+        <KeyedProperty propertyKey="18" id="0:537">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:538">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:539" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:123" id="0:540">
+        <KeyedProperty propertyKey="18" id="0:541">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:542">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:543" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:135" id="0:544">
+        <KeyedProperty propertyKey="18" id="0:545">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:546">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:547" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:147" id="0:548">
+        <KeyedProperty propertyKey="18" id="0:549">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:550">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:551" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:155" id="0:552">
+        <KeyedProperty propertyKey="18" id="0:553">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:554">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:555" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:165" id="0:556">
+        <KeyedProperty propertyKey="18" id="0:557">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:558">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:559" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:320" name="Die1_4" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:116" id="0:560">
+        <KeyedProperty propertyKey="18" id="0:561">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:562">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:563" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:123" id="0:564">
+        <KeyedProperty propertyKey="18" id="0:565">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:566">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:567" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:135" id="0:568">
+        <KeyedProperty propertyKey="18" id="0:569">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:570">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:571" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:147" id="0:572">
+        <KeyedProperty propertyKey="18" id="0:573">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:574">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:575" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:155" id="0:576">
+        <KeyedProperty propertyKey="18" id="0:577">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:578">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:579" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:165" id="0:580">
+        <KeyedProperty propertyKey="18" id="0:581">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:582">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:583" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:321" name="Die1_5" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:116" id="0:584">
+        <KeyedProperty propertyKey="18" id="0:585">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:586">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:587" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:123" id="0:588">
+        <KeyedProperty propertyKey="18" id="0:589">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:590">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:591" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:135" id="0:592">
+        <KeyedProperty propertyKey="18" id="0:593">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:594">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:595" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:147" id="0:596">
+        <KeyedProperty propertyKey="18" id="0:597">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:598">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:599" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:155" id="0:600">
+        <KeyedProperty propertyKey="18" id="0:601">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:602">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:603" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:165" id="0:604">
+        <KeyedProperty propertyKey="18" id="0:605">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:606">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:607" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:322" name="Die1_6" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:116" id="0:608">
+        <KeyedProperty propertyKey="18" id="0:609">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:610">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:611" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:123" id="0:612">
+        <KeyedProperty propertyKey="18" id="0:613">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:614">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:615" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:135" id="0:616">
+        <KeyedProperty propertyKey="18" id="0:617">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:618">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:619" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:147" id="0:620">
+        <KeyedProperty propertyKey="18" id="0:621">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:622">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:623" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:155" id="0:624">
+        <KeyedProperty propertyKey="18" id="0:625">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:626">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:627" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:165" id="0:628">
+        <KeyedProperty propertyKey="18" id="0:629">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:630">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:631" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:323" name="Die2_1" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:182" id="0:632">
+        <KeyedProperty propertyKey="18" id="0:633">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:634">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:635" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:189" id="0:636">
+        <KeyedProperty propertyKey="18" id="0:637">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:638">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:639" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:201" id="0:640">
+        <KeyedProperty propertyKey="18" id="0:641">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:642">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:643" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:213" id="0:644">
+        <KeyedProperty propertyKey="18" id="0:645">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:646">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:647" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:221" id="0:648">
+        <KeyedProperty propertyKey="18" id="0:649">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:650">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:651" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:231" id="0:652">
+        <KeyedProperty propertyKey="18" id="0:653">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:654">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:655" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:324" name="Die2_2" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:182" id="0:656">
+        <KeyedProperty propertyKey="18" id="0:657">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:658">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:659" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:189" id="0:660">
+        <KeyedProperty propertyKey="18" id="0:661">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:662">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:663" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:201" id="0:664">
+        <KeyedProperty propertyKey="18" id="0:665">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:666">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:667" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:213" id="0:668">
+        <KeyedProperty propertyKey="18" id="0:669">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:670">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:671" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:221" id="0:672">
+        <KeyedProperty propertyKey="18" id="0:673">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:674">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:675" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:231" id="0:676">
+        <KeyedProperty propertyKey="18" id="0:677">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:678">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:679" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:325" name="Die2_3" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:182" id="0:680">
+        <KeyedProperty propertyKey="18" id="0:681">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:682">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:683" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:189" id="0:684">
+        <KeyedProperty propertyKey="18" id="0:685">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:686">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:687" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:201" id="0:688">
+        <KeyedProperty propertyKey="18" id="0:689">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:690">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:691" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:213" id="0:692">
+        <KeyedProperty propertyKey="18" id="0:693">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:694">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:695" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:221" id="0:696">
+        <KeyedProperty propertyKey="18" id="0:697">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:698">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:699" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:231" id="0:700">
+        <KeyedProperty propertyKey="18" id="0:701">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:702">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:703" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:326" name="Die2_4" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:182" id="0:704">
+        <KeyedProperty propertyKey="18" id="0:705">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:706">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:707" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:189" id="0:708">
+        <KeyedProperty propertyKey="18" id="0:709">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:710">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:711" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:201" id="0:712">
+        <KeyedProperty propertyKey="18" id="0:713">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:714">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:715" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:213" id="0:716">
+        <KeyedProperty propertyKey="18" id="0:717">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:718">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:719" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:221" id="0:720">
+        <KeyedProperty propertyKey="18" id="0:721">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:722">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:723" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:231" id="0:724">
+        <KeyedProperty propertyKey="18" id="0:725">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:726">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:727" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:327" name="Die2_5" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:182" id="0:728">
+        <KeyedProperty propertyKey="18" id="0:729">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:730">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:731" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:189" id="0:732">
+        <KeyedProperty propertyKey="18" id="0:733">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:734">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:735" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:201" id="0:736">
+        <KeyedProperty propertyKey="18" id="0:737">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:738">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:739" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:213" id="0:740">
+        <KeyedProperty propertyKey="18" id="0:741">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:742">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:743" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:221" id="0:744">
+        <KeyedProperty propertyKey="18" id="0:745">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:746">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:747" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:231" id="0:748">
+        <KeyedProperty propertyKey="18" id="0:749">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:750">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:751" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:328" name="Die2_6" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:182" id="0:752">
+        <KeyedProperty propertyKey="18" id="0:753">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:754">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:755" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:189" id="0:756">
+        <KeyedProperty propertyKey="18" id="0:757">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:758">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:759" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:201" id="0:760">
+        <KeyedProperty propertyKey="18" id="0:761">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:762">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:763" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:213" id="0:764">
+        <KeyedProperty propertyKey="18" id="0:765">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:766">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:767" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:221" id="0:768">
+        <KeyedProperty propertyKey="18" id="0:769">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:770">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:771" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:231" id="0:772">
+        <KeyedProperty propertyKey="18" id="0:773">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:774">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:775" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:329" name="Die3_1" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:248" id="0:776">
+        <KeyedProperty propertyKey="18" id="0:777">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:778">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:779" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:255" id="0:780">
+        <KeyedProperty propertyKey="18" id="0:781">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:782">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:783" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:267" id="0:784">
+        <KeyedProperty propertyKey="18" id="0:785">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:786">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:787" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:279" id="0:788">
+        <KeyedProperty propertyKey="18" id="0:789">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:790">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:791" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:287" id="0:792">
+        <KeyedProperty propertyKey="18" id="0:793">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:794">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:795" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:297" id="0:796">
+        <KeyedProperty propertyKey="18" id="0:797">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:798">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:799" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:330" name="Die3_2" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:248" id="0:800">
+        <KeyedProperty propertyKey="18" id="0:801">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:802">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:803" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:255" id="0:804">
+        <KeyedProperty propertyKey="18" id="0:805">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:806">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:807" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:267" id="0:808">
+        <KeyedProperty propertyKey="18" id="0:809">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:810">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:811" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:279" id="0:812">
+        <KeyedProperty propertyKey="18" id="0:813">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:814">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:815" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:287" id="0:816">
+        <KeyedProperty propertyKey="18" id="0:817">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:818">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:819" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:297" id="0:820">
+        <KeyedProperty propertyKey="18" id="0:821">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:822">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:823" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:331" name="Die3_3" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:248" id="0:824">
+        <KeyedProperty propertyKey="18" id="0:825">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:826">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:827" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:255" id="0:828">
+        <KeyedProperty propertyKey="18" id="0:829">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:830">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:831" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:267" id="0:832">
+        <KeyedProperty propertyKey="18" id="0:833">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:834">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:835" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:279" id="0:836">
+        <KeyedProperty propertyKey="18" id="0:837">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:838">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:839" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:287" id="0:840">
+        <KeyedProperty propertyKey="18" id="0:841">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:842">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:843" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:297" id="0:844">
+        <KeyedProperty propertyKey="18" id="0:845">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:846">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:847" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:332" name="Die3_4" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:248" id="0:848">
+        <KeyedProperty propertyKey="18" id="0:849">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:850">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:851" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:255" id="0:852">
+        <KeyedProperty propertyKey="18" id="0:853">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:854">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:855" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:267" id="0:856">
+        <KeyedProperty propertyKey="18" id="0:857">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:858">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:859" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:279" id="0:860">
+        <KeyedProperty propertyKey="18" id="0:861">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:862">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:863" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:287" id="0:864">
+        <KeyedProperty propertyKey="18" id="0:865">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:866">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:867" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:297" id="0:868">
+        <KeyedProperty propertyKey="18" id="0:869">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:870">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:871" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:333" name="Die3_5" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:248" id="0:872">
+        <KeyedProperty propertyKey="18" id="0:873">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:874">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:875" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:255" id="0:876">
+        <KeyedProperty propertyKey="18" id="0:877">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:878">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:879" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:267" id="0:880">
+        <KeyedProperty propertyKey="18" id="0:881">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:882">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:883" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:279" id="0:884">
+        <KeyedProperty propertyKey="18" id="0:885">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:886">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:887" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:287" id="0:888">
+        <KeyedProperty propertyKey="18" id="0:889">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:890">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:891" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:297" id="0:892">
+        <KeyedProperty propertyKey="18" id="0:893">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:894">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:895" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <LinearAnimation id="0:334" name="Die3_6" duration="1" fps="60" loopValue="oneShot">
+      <KeyedObject objectId="0:248" id="0:896">
+        <KeyedProperty propertyKey="18" id="0:897">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:898">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:899" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:255" id="0:900">
+        <KeyedProperty propertyKey="18" id="0:901">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:902">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:903" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:267" id="0:904">
+        <KeyedProperty propertyKey="18" id="0:905">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:906">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:907" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:279" id="0:908">
+        <KeyedProperty propertyKey="18" id="0:909">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:910">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:911" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:287" id="0:912">
+        <KeyedProperty propertyKey="18" id="0:913">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:914">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:915" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:297" id="0:916">
+        <KeyedProperty propertyKey="18" id="0:917">
+          <KeyFrameDouble frame="0" value="1" interpolationType="cubic" id="0:918">
+            <CubicEaseInterpolator x1="0.25" y1="0.1" x2="0.25" y2="1" id="0:919" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+    <StateMachine id="0:107" name="DiceController">
+      <StateMachineLayer name="Cup motion" id="0:335">
+        <AnyState x="0" y="-150" id="0:920">
+          <StateTransition stateToId="0:336" duration="0" id="0:921">
+            <TransitionViewModelCondition opValue="equal" id="0:922">
+              <TransitionPropertyViewModelComparator id="0:923">
+                <BindablePropertyNumber id="0:924">
+                  <DataBindContext sourcePathIds="0:101-0:106" propertyKey="636" id="0:925" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="0" id="0:926" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:337" duration="0" id="0:927">
+            <TransitionViewModelCondition opValue="equal" id="0:928">
+              <TransitionPropertyViewModelComparator id="0:929">
+                <BindablePropertyNumber id="0:930">
+                  <DataBindContext sourcePathIds="0:101-0:106" propertyKey="636" id="0:931" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="1" id="0:932" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:338" duration="0" id="0:933">
+            <TransitionViewModelCondition opValue="equal" id="0:934">
+              <TransitionPropertyViewModelComparator id="0:935">
+                <BindablePropertyNumber id="0:936">
+                  <DataBindContext sourcePathIds="0:101-0:106" propertyKey="636" id="0:937" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="2" id="0:938" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+        </AnyState>
+        <ExitState x="220" y="-150" id="0:939" />
+        <EntryState x="-200" y="0" id="0:940">
+          <StateTransition stateToId="0:336" id="0:941" />
+        </EntryState>
+        <AnimationState id="0:336" animationId="0:314" x="0" y="70" reset="true" />
+        <AnimationState id="0:337" animationId="0:315" x="220" y="70" reset="true" />
+        <AnimationState id="0:338" animationId="0:316" x="440" y="70" reset="true" />
+      </StateMachineLayer>
+      <StateMachineLayer name="Die 1 result" id="0:339">
+        <AnyState x="0" y="-150" id="0:942">
+          <StateTransition stateToId="0:340" duration="0" id="0:943">
+            <TransitionViewModelCondition opValue="equal" id="0:944">
+              <TransitionPropertyViewModelComparator id="0:945">
+                <BindablePropertyNumber id="0:946">
+                  <DataBindContext sourcePathIds="0:101-0:103" propertyKey="636" id="0:947" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="1" id="0:948" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:341" duration="0" id="0:949">
+            <TransitionViewModelCondition opValue="equal" id="0:950">
+              <TransitionPropertyViewModelComparator id="0:951">
+                <BindablePropertyNumber id="0:952">
+                  <DataBindContext sourcePathIds="0:101-0:103" propertyKey="636" id="0:953" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="2" id="0:954" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:342" duration="0" id="0:955">
+            <TransitionViewModelCondition opValue="equal" id="0:956">
+              <TransitionPropertyViewModelComparator id="0:957">
+                <BindablePropertyNumber id="0:958">
+                  <DataBindContext sourcePathIds="0:101-0:103" propertyKey="636" id="0:959" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="3" id="0:960" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:343" duration="0" id="0:961">
+            <TransitionViewModelCondition opValue="equal" id="0:962">
+              <TransitionPropertyViewModelComparator id="0:963">
+                <BindablePropertyNumber id="0:964">
+                  <DataBindContext sourcePathIds="0:101-0:103" propertyKey="636" id="0:965" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="4" id="0:966" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:344" duration="0" id="0:967">
+            <TransitionViewModelCondition opValue="equal" id="0:968">
+              <TransitionPropertyViewModelComparator id="0:969">
+                <BindablePropertyNumber id="0:970">
+                  <DataBindContext sourcePathIds="0:101-0:103" propertyKey="636" id="0:971" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="5" id="0:972" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:345" duration="0" id="0:973">
+            <TransitionViewModelCondition opValue="equal" id="0:974">
+              <TransitionPropertyViewModelComparator id="0:975">
+                <BindablePropertyNumber id="0:976">
+                  <DataBindContext sourcePathIds="0:101-0:103" propertyKey="636" id="0:977" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="6" id="0:978" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+        </AnyState>
+        <ExitState x="220" y="-150" id="0:979" />
+        <EntryState x="-200" y="0" id="0:980">
+          <StateTransition stateToId="0:340" id="0:981" />
+        </EntryState>
+        <AnimationState id="0:340" animationId="0:317" x="0" y="70" reset="true" />
+        <AnimationState id="0:341" animationId="0:318" x="220" y="70" reset="true" />
+        <AnimationState id="0:342" animationId="0:319" x="440" y="70" reset="true" />
+        <AnimationState id="0:343" animationId="0:320" x="660" y="70" reset="true" />
+        <AnimationState id="0:344" animationId="0:321" x="880" y="70" reset="true" />
+        <AnimationState id="0:345" animationId="0:322" x="1100" y="70" reset="true" />
+      </StateMachineLayer>
+      <StateMachineLayer name="Die 2 result" id="0:346">
+        <AnyState x="0" y="-150" id="0:982">
+          <StateTransition stateToId="0:347" duration="0" id="0:983">
+            <TransitionViewModelCondition opValue="equal" id="0:984">
+              <TransitionPropertyViewModelComparator id="0:985">
+                <BindablePropertyNumber id="0:986">
+                  <DataBindContext sourcePathIds="0:101-0:104" propertyKey="636" id="0:987" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="1" id="0:988" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:348" duration="0" id="0:989">
+            <TransitionViewModelCondition opValue="equal" id="0:990">
+              <TransitionPropertyViewModelComparator id="0:991">
+                <BindablePropertyNumber id="0:992">
+                  <DataBindContext sourcePathIds="0:101-0:104" propertyKey="636" id="0:993" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="2" id="0:994" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:349" duration="0" id="0:995">
+            <TransitionViewModelCondition opValue="equal" id="0:996">
+              <TransitionPropertyViewModelComparator id="0:997">
+                <BindablePropertyNumber id="0:998">
+                  <DataBindContext sourcePathIds="0:101-0:104" propertyKey="636" id="0:999" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="3" id="0:1000" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:350" duration="0" id="0:1001">
+            <TransitionViewModelCondition opValue="equal" id="0:1002">
+              <TransitionPropertyViewModelComparator id="0:1003">
+                <BindablePropertyNumber id="0:1004">
+                  <DataBindContext sourcePathIds="0:101-0:104" propertyKey="636" id="0:1005" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="4" id="0:1006" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:351" duration="0" id="0:1007">
+            <TransitionViewModelCondition opValue="equal" id="0:1008">
+              <TransitionPropertyViewModelComparator id="0:1009">
+                <BindablePropertyNumber id="0:1010">
+                  <DataBindContext sourcePathIds="0:101-0:104" propertyKey="636" id="0:1011" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="5" id="0:1012" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:352" duration="0" id="0:1013">
+            <TransitionViewModelCondition opValue="equal" id="0:1014">
+              <TransitionPropertyViewModelComparator id="0:1015">
+                <BindablePropertyNumber id="0:1016">
+                  <DataBindContext sourcePathIds="0:101-0:104" propertyKey="636" id="0:1017" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="6" id="0:1018" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+        </AnyState>
+        <ExitState x="220" y="-150" id="0:1019" />
+        <EntryState x="-200" y="0" id="0:1020">
+          <StateTransition stateToId="0:348" id="0:1021" />
+        </EntryState>
+        <AnimationState id="0:347" animationId="0:323" x="0" y="70" reset="true" />
+        <AnimationState id="0:348" animationId="0:324" x="220" y="70" reset="true" />
+        <AnimationState id="0:349" animationId="0:325" x="440" y="70" reset="true" />
+        <AnimationState id="0:350" animationId="0:326" x="660" y="70" reset="true" />
+        <AnimationState id="0:351" animationId="0:327" x="880" y="70" reset="true" />
+        <AnimationState id="0:352" animationId="0:328" x="1100" y="70" reset="true" />
+      </StateMachineLayer>
+      <StateMachineLayer name="Die 3 result" id="0:353">
+        <AnyState x="0" y="-150" id="0:1022">
+          <StateTransition stateToId="0:354" duration="0" id="0:1023">
+            <TransitionViewModelCondition opValue="equal" id="0:1024">
+              <TransitionPropertyViewModelComparator id="0:1025">
+                <BindablePropertyNumber id="0:1026">
+                  <DataBindContext sourcePathIds="0:101-0:105" propertyKey="636" id="0:1027" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="1" id="0:1028" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:355" duration="0" id="0:1029">
+            <TransitionViewModelCondition opValue="equal" id="0:1030">
+              <TransitionPropertyViewModelComparator id="0:1031">
+                <BindablePropertyNumber id="0:1032">
+                  <DataBindContext sourcePathIds="0:101-0:105" propertyKey="636" id="0:1033" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="2" id="0:1034" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:356" duration="0" id="0:1035">
+            <TransitionViewModelCondition opValue="equal" id="0:1036">
+              <TransitionPropertyViewModelComparator id="0:1037">
+                <BindablePropertyNumber id="0:1038">
+                  <DataBindContext sourcePathIds="0:101-0:105" propertyKey="636" id="0:1039" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="3" id="0:1040" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:357" duration="0" id="0:1041">
+            <TransitionViewModelCondition opValue="equal" id="0:1042">
+              <TransitionPropertyViewModelComparator id="0:1043">
+                <BindablePropertyNumber id="0:1044">
+                  <DataBindContext sourcePathIds="0:101-0:105" propertyKey="636" id="0:1045" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="4" id="0:1046" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:358" duration="0" id="0:1047">
+            <TransitionViewModelCondition opValue="equal" id="0:1048">
+              <TransitionPropertyViewModelComparator id="0:1049">
+                <BindablePropertyNumber id="0:1050">
+                  <DataBindContext sourcePathIds="0:101-0:105" propertyKey="636" id="0:1051" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="5" id="0:1052" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+          <StateTransition stateToId="0:359" duration="0" id="0:1053">
+            <TransitionViewModelCondition opValue="equal" id="0:1054">
+              <TransitionPropertyViewModelComparator id="0:1055">
+                <BindablePropertyNumber id="0:1056">
+                  <DataBindContext sourcePathIds="0:101-0:105" propertyKey="636" id="0:1057" />
+                </BindablePropertyNumber>
+              </TransitionPropertyViewModelComparator>
+              <TransitionValueNumberComparator value="6" id="0:1058" />
+            </TransitionViewModelCondition>
+          </StateTransition>
+        </AnyState>
+        <ExitState x="220" y="-150" id="0:1059" />
+        <EntryState x="-200" y="0" id="0:1060">
+          <StateTransition stateToId="0:356" id="0:1061" />
+        </EntryState>
+        <AnimationState id="0:354" animationId="0:329" x="0" y="70" reset="true" />
+        <AnimationState id="0:355" animationId="0:330" x="220" y="70" reset="true" />
+        <AnimationState id="0:356" animationId="0:331" x="440" y="70" reset="true" />
+        <AnimationState id="0:357" animationId="0:332" x="660" y="70" reset="true" />
+        <AnimationState id="0:358" animationId="0:333" x="880" y="70" reset="true" />
+        <AnimationState id="0:359" animationId="0:334" x="1100" y="70" reset="true" />
+      </StateMachineLayer>
+    </StateMachine>
+  </Artboard>
+  <ViewModel name="DiceModel" id="0:101" defaultInstanceId="0:102">
+    <ViewModelPropertyNumber name="die1" id="0:103" />
+    <ViewModelPropertyNumber name="die2" id="0:104" />
+    <ViewModelPropertyNumber name="die3" id="0:105" />
+    <ViewModelPropertyNumber name="phase" id="0:106" />
+    <ViewModelInstance name="Default" id="0:102" exports="true">
+      <ViewModelInstanceNumber viewModelPropertyId="0:103" propertyValue="1" id="0:1062" />
+      <ViewModelInstanceNumber viewModelPropertyId="0:104" propertyValue="2" id="0:1063" />
+      <ViewModelInstanceNumber viewModelPropertyId="0:105" propertyValue="3" id="0:1064" />
+      <ViewModelInstanceNumber viewModelPropertyId="0:106" propertyValue="0" id="0:1065" />
+    </ViewModelInstance>
+  </ViewModel>
+  <ImageAsset id="0:108" name="cup" file="../assets/cup.png" />
+  <ImageAsset id="0:109" name="die" file="../assets/die-cube-v2.png" />
+  <ImageAsset id="0:110" name="pip" file="../assets/pip.png" />
+  <ImageAsset id="0:111" name="table" file="../assets/table.png" />
+</Rive>

@@ -13,6 +13,7 @@ let choices = [];
 let playing = false;
 let ready = false;
 let request = null;
+let disposeController = null;
 
 function playback(value) {
   playing = value;
@@ -37,6 +38,7 @@ function fail(message, token) {
   document.body.dataset.loaded = 'error';
 }
 function cleanup() {
+  disposeController?.(); disposeController = null;
   request?.abort();
   request = null;
   players.forEach(p => p.cleanup());
@@ -82,22 +84,31 @@ function loadSingle(d, token, selection = 0) {
   const choice = d.choices?.[selection];
   const src = choice?.src || d.src;
   activeFile = src;
+  const runtimeSrc = new URL(src, document.baseURI);
+  if (d.version) runtimeSrc.searchParams.set("v", d.version);
   $('#download').href = src;
   if (choice?.editable || d.editable) $('#editable').href = choice?.editable || d.editable;
   const canvas = document.createElement('canvas');
   canvas.setAttribute('aria-label', d.title + ' 動畫');
   viewer.prepend(canvas);
   const p = new rive.Rive({
-    src, canvas, artboard: d.artboard, autoBind: !!d.autoBind,
+    src: runtimeSrc.href, canvas, artboard: d.artboard, autoBind: !!d.autoBind,
     autoplay: !!choice, ...playbackOptions(d, choice),
     layout: new rive.Layout({ fit: rive.Fit.Contain, alignment: rive.Alignment.Center }),
-    onLoad() {
+    async onLoad() {
       if (token !== generation) return;
       populateChoices(d, p);
       motion.value = String(selection);
       if (!choices.length) { fail('此檔案沒有可播放的動畫。', token); return; }
       if (!choice) p.play(choices[0].name);
       p.resizeDrawingSurfaceToCanvas();
+      if (d.controller) {
+        try {
+          const module = await import(new URL(d.controller, document.baseURI).href);
+          if (token !== generation) return;
+          disposeController = module.mount({ player: p, container: $('#banner-controls') });
+        } catch (error) { fail('互動控制載入失敗，請重新整理。', token); return; }
+      }
       setReady();
     },
     onLoadError() { fail('動畫載入失敗，請重新整理或檢查檔案。', token); },
@@ -184,7 +195,7 @@ function selectDemo(next, updateUrl = true, selection = 0) {
 function restart() {
   if (!ready) return;
   const d = catalog[index];
-  if (d.kind === 'grid') { selectDemo(index); return; }
+  if (d.kind === 'grid' || d.controller) { selectDemo(index); return; }
   const selection = Number(motion.value) || 0;
   const choice = choices[selection];
   if ((choice.src || d.src) !== activeFile) { selectDemo(index, true, selection); return; }
@@ -209,7 +220,7 @@ window.addEventListener('hashchange', () => {
   if (next >= 0 && next !== index) selectDemo(next, false);
 });
 try {
-  const response = await fetch('./app/catalog.json');
+  const response = await fetch('./app/catalog.json', { cache: 'no-cache' });
   if (!response.ok) throw new Error('Cannot load catalog');
   catalog = await response.json();
   if (!window.rive || !catalog.length) throw new Error('No runtime or examples');

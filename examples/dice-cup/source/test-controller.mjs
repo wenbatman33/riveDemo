@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import { createDiceController } from '../controller.js';
+const properties = Object.fromEntries(['phase','die1','die2','die3'].map(k => [k, {value:0}]));
+const api = createDiceController({viewModelInstance:{number:name=>properties[name]}});
+api.setDice([1,3,5]);
+assert.throws(()=>api.setDice([1,2,7]),RangeError);
+assert.deepEqual(api.getDice(),[1,3,5]);
+assert.throws(()=>api.roll([1,2,3],{duration:-1}),RangeError);
+const cancelled = api.roll([2,4,6],{duration:50});
+api.close(); assert.deepEqual(await cancelled,{cancelled:true});
+await new Promise(r=>setTimeout(r,70)); assert.equal(properties.phase.value,0);
+const result=await api.roll([6,5,4],{duration:50});
+assert.deepEqual(result,{cancelled:false,dice:[6,5,4]}); assert.equal(properties.phase.value,2);
+const pending=api.roll([1,1,1],{duration:50});api.dispose();assert.deepEqual(await pending,{cancelled:true});
+assert.throws(()=>api.open(),/disposed/);
+console.log('Controller: validation is atomic; cancellation, reveal, and disposal pass.');

@@ -59,3 +59,7 @@ scripts/validate.mjs       路徑、清單與搬移完整性檢查
 鷹隼守衛沿用 ersanakpinarr 的 Mummy 骨骼與動畫（CC BY 4.0）。腳、裙甲、法杖為剛性骨骼跟隨；原預覽縮圖仍保留。詳見 `examples/mummy/REFERENCE.md`。
 
 放學跑步的骨盆独立變形仍待調整，製作紀錄見 `examples/school-run/ASSETS.md`。Banner 與九款遊戲封面來自使用者提供的 riveBanners/web。Banner 原頁註明靈感來源 Anime Girl / xandercorp 與 Kidoo / oneweekwonders，插畫為原創重繪。首頁切換互動參考 Journey / irmate210。
+
+## 外部 JS 控制骰盅
+
+`/#dice-cup` 為三顆骰子的可控結果展示。可編輯 `.rev`、RML 原始碼、素材與控制器位於 `examples/dice-cup/`；API 用法見該目錄 README。`catalog.json` 的可選 `controller` 欄位可指定 ES module，匯出 `mount({player, container})` 並返回清理函數，即可加入範例專用控制而不用複製播放器。
