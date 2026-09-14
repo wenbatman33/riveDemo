@@ -83,6 +83,8 @@ function buildControls(d) {
 function loadSingle(d, token, selection = 0) {
   const choice = d.choices?.[selection];
   const src = choice?.src || d.src;
+  viewer.style.maxWidth = d.theme === 'promo' ? (choice?.width || 764) + 'px' : '';
+  viewer.style.marginInline = d.theme === 'promo' ? 'auto' : '';
   activeFile = src;
   const runtimeSrc = new URL(src, document.baseURI);
   if (d.version) runtimeSrc.searchParams.set("v", d.version);
@@ -173,6 +175,8 @@ function selectDemo(next, updateUrl = true, selection = 0) {
   motion.hidden = d.kind === 'grid';
   motion.disabled = $('#toggle').disabled = $('#restart').disabled = true;
   buildControls(d);
+  viewer.style.maxWidth = '';
+  viewer.style.marginInline = '';
   viewer.dataset.kind = d.kind || 'single';
   viewer.dataset.theme = d.theme || '';
   loading.hidden = false;

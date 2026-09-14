@@ -1,0 +1,30 @@
+[
+  {
+    "banner": "shield-banner",
+    "width": 531,
+    "height": 200,
+    "bytes": 528795,
+    "keyframes": 247
+  },
+  {
+    "banner": "shield-banner",
+    "width": 764,
+    "height": 288,
+    "bytes": 841307,
+    "keyframes": 247
+  },
+  {
+    "banner": "casino-banner",
+    "width": 531,
+    "height": 200,
+    "bytes": 436459,
+    "keyframes": 6009
+  },
+  {
+    "banner": "casino-banner",
+    "width": 764,
+    "height": 288,
+    "bytes": 643509,
+    "keyframes": 6090
+  }
+]

@@ -253,5 +253,61 @@
       }
     ],
     "note": "六秒循環：轉輪減速停妥後，金幣向上噴出、翻轉散落。可暫停或重新播放。"
+  },
+  {
+    "id": "shield-banner",
+    "title": "18 神之盾",
+    "description": "固定背景，沿用參考的分層人物、標題與道具動作。",
+    "short": "雙尺寸 · 動態 Banner",
+    "src": "./examples/shield-banner/banner-764x288.riv",
+    "artboard": "Banner",
+    "theme": "promo",
+    "version": "layered-sharp-3",
+    "autoBind": false,
+    "choices": [
+      {
+        "name": "Ambient",
+        "type": "animation",
+        "label": "764 × 288",
+        "src": "./examples/shield-banner/banner-764x288.riv",
+        "width": 764
+      },
+      {
+        "name": "Ambient",
+        "type": "animation",
+        "label": "531 × 200",
+        "src": "./examples/shield-banner/banner-531x200.riv",
+        "width": 531
+      }
+    ],
+    "note": "參考動作版：背景固定，人物、標題與特效分層播放。可切換兩種尺寸並下載。"
+  },
+  {
+    "id": "casino-banner",
+    "title": "棋牌激情加碼",
+    "description": "固定背景，沿用參考的分層人物、標題與道具動作。",
+    "short": "雙尺寸 · 動態 Banner",
+    "src": "./examples/casino-banner/banner-764x288.riv",
+    "artboard": "Banner",
+    "theme": "promo",
+    "version": "layered-sharp-3",
+    "autoBind": false,
+    "choices": [
+      {
+        "name": "Ambient",
+        "type": "animation",
+        "label": "764 × 288",
+        "src": "./examples/casino-banner/banner-764x288.riv",
+        "width": 764
+      },
+      {
+        "name": "Ambient",
+        "type": "animation",
+        "label": "531 × 200",
+        "src": "./examples/casino-banner/banner-531x200.riv",
+        "width": 531
+      }
+    ],
+    "note": "參考動作版：背景固定，人物、標題與特效分層播放。可切換兩種尺寸並下載。"
   }
 ]

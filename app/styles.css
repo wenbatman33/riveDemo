@@ -7,3 +7,5 @@
 .viewer[data-theme="logo"]{background:radial-gradient(ellipse at 50% 45%,#40301e 0%,#1c1916 40%,#0b0d10 85%)}
 
 .viewer[data-theme="jackpot"]{height:min(76vh,850px);min-height:420px;background:#210905}
+
+.viewer[data-theme="promo"]{height:auto;min-height:0;aspect-ratio:764/288;background:#180f19}
