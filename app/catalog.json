@@ -211,9 +211,9 @@
       }
     ],
     "controller": "./examples/dice-cup/controller.js",
-    "note": "三顆骰子各支援 1～6 點。下方控制列與外部 JS 共用同一套資料綁定。",
+    "note": "點擊骰盅即可搖動並自動開盅。三顆骰子各支援 1～6 點，可由下方選單或外部 JS 指定。",
     "theme": "dice",
-    "version": "cube-v2"
+    "version": "click-roll-1"
   },
   {
     "id": "luck18-logo",
@@ -234,5 +234,24 @@
         "label": "滑鼠視差"
       }
     ]
+  },
+  {
+    "id": "jackpot-777",
+    "title": "777 · 超級大獎",
+    "description": "三輪滾動依序停在 777，金幣噴泉與閃光慶祝大獎。",
+    "short": "777 大獎 · 慶祝動畫",
+    "src": "./examples/jackpot-777/animation.riv",
+    "artboard": "Jackpot777",
+    "autoBind": false,
+    "theme": "jackpot",
+    "version": "reels-coins-2",
+    "choices": [
+      {
+        "name": "Jackpot",
+        "type": "animation",
+        "label": "中獎慶祝"
+      }
+    ],
+    "note": "六秒循環：轉輪減速停妥後，金幣向上噴出、翻轉散落。可暫停或重新播放。"
   }
 ]

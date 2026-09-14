@@ -53,14 +53,42 @@ export function mount({ player, container }) {
     for (let n = 1; n <= 6; n++) select.add(new Option(String(n), String(n)));
     select.value = String(i * 2); label.append(select); container.append(label); return select;
   });
-  const status = document.createElement('span'); status.setAttribute('role', 'status'); status.textContent = '指定點數後搖盅，或直接開盅。';
+  const status = document.createElement('span'); status.setAttribute('role', 'status'); status.textContent = '點擊骰盅即可搖動並開盅，也可先指定點數。';
   const values = () => inputs.map(el => Number(el.value));
+  const canvas = document.querySelector('#viewer canvas');
+  let rolling = false;
+  async function rollFromClick() {
+    if (rolling) return;
+    rolling = true;
+    canvas.setAttribute('aria-busy', 'true');
+    if (document.body.dataset.playback === 'paused') document.querySelector('#toggle').click();
+    status.textContent = '搖盅中…';
+    try {
+      const result = await api.roll(values());
+      if (!result.cancelled) status.textContent = `開盅：${result.dice.join('、')}，再點一下可重新搖盅。`;
+    } finally {
+      rolling = false;
+      canvas.setAttribute('aria-busy', 'false');
+    }
+  }
+  function keydown(event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      if (!event.repeat) rollFromClick();
+    }
+  }
+  canvas.tabIndex = 0;
+  canvas.setAttribute('role', 'button');
+  canvas.setAttribute('aria-label', '骰盅：點擊搖動並開盅');
+  canvas.style.cursor = 'pointer';
+  canvas.addEventListener('click', rollFromClick);
+  canvas.addEventListener('keydown', keydown);
   const actions = [
-    ['搖盅並開盅', async () => { status.textContent = '搖盅中…'; const r = await api.roll(values()); if (!r.cancelled) status.textContent = `開盅：${r.dice.join('、')}`; }],
-    ['直接開盅', () => { api.open(values()); status.textContent = `开盅：${values().join('、')}`; }],
+    ['搖盅並開盅', rollFromClick],
+    ['直接開盅', () => { api.open(values()); status.textContent = `開盅：${values().join('、')}`; }],
     ['蓋盅', () => { api.close(); status.textContent = '已蓋盅'; }],
   ];
   for (const [name, action] of actions) { const b = document.createElement('button'); b.textContent = name; b.onclick = action; container.append(b); }
   container.append(status);
-  return () => { api.dispose(); if (window.diceCup === api) delete window.diceCup; };
+  return () => { canvas.removeEventListener('click', rollFromClick); canvas.removeEventListener('keydown', keydown); api.dispose(); if (window.diceCup === api) delete window.diceCup; };
 }

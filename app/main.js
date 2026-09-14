@@ -104,7 +104,9 @@ function loadSingle(d, token, selection = 0) {
       p.resizeDrawingSurfaceToCanvas();
       if (d.controller) {
         try {
-          const module = await import(new URL(d.controller, document.baseURI).href);
+          const controllerUrl = new URL(d.controller, document.baseURI);
+          if (d.version) controllerUrl.searchParams.set('v', d.version);
+          const module = await import(controllerUrl.href);
           if (token !== generation) return;
           disposeController = module.mount({ player: p, container: $('#banner-controls') });
         } catch (error) { fail('互動控制載入失敗，請重新整理。', token); return; }
