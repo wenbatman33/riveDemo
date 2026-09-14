@@ -7,3 +7,7 @@
 `source/scene.rml` 保留各轉輪、裁切範圍、金幣軌跡與閃光動畫，可逐層調整。`source/build_scene.py` 可重建場景：先執行 Python，再用 `rive source --once`，將 `source/build/jackpot-777.riv` 複製至 `animation.riv`。
 
 目前提供 RML 來源及播放用 .riv。原生編輯器 .rev 匯出需要 CLI 登入，可用 `rive source --once --rev=source/editable.rev` 產生。
+
+網頁播放檔改用 assets/optimized 的 WebP 素材；原始 PNG 保留供編輯。轉輪符號縮至 384 px、金幣 192 px、閃光 128 px，機台保留原尺寸。執行 `python3 source/compress_assets.py` 可重新產生壓縮素材，再依上方流程重建 Rive。
+
+招牌燈光以 MarqueeOdd／MarqueeEven 兩組圖層交替加亮，每 0.3 秒換組，保留原圖暖色底光。共用既有閃光素材，僅增加約 3 KB。

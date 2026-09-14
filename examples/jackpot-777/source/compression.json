@@ -1,0 +1,54 @@
+[
+  {
+    "asset": "machine-blank",
+    "originalDimensions": [
+      1047,
+      1503
+    ],
+    "dimensions": [
+      1047,
+      1503
+    ],
+    "before": 2129884,
+    "after": 217868
+  },
+  {
+    "asset": "seven",
+    "originalDimensions": [
+      1221,
+      1289
+    ],
+    "dimensions": [
+      364,
+      384
+    ],
+    "before": 1250159,
+    "after": 33494
+  },
+  {
+    "asset": "coin",
+    "originalDimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      192,
+      192
+    ],
+    "before": 2109315,
+    "after": 16964
+  },
+  {
+    "asset": "sparkle",
+    "originalDimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      128,
+      128
+    ],
+    "before": 552872,
+    "after": 4192
+  }
+]
