@@ -3,3 +3,5 @@
 .viewer[data-kind="grid"]{height:auto;min-height:290px;padding:24px}.icon-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,200px));gap:20px;justify-content:center}.icon-tile{padding:0;border:1px solid #ffffff20;background:#16161d;border-radius:18px;overflow:hidden;width:100%;aspect-ratio:1;position:relative}.icon-tile canvas{width:100%;height:100%}.icon-tile[aria-pressed=true]{outline:3px solid #ebc38a}.viewer[data-kind="grid"] .load{min-height:290px}.library{margin-top:12px}.tabs{flex-wrap:wrap;overflow:visible}.card{flex:1 1 220px;max-width:320px}.masthead a{font-size:12px}.load{z-index:1}@media(max-width:600px){.icon-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.viewer[data-kind="grid"]{padding:12px}.card{flex-basis:calc(50% - 12px);min-width:130px}.card[aria-selected=true]:after{position:static;display:block;margin-top:8px}}
 
 .viewer[data-theme="dice"]{height:auto;min-height:0;aspect-ratio:3/2}
+
+.viewer[data-theme="logo"]{background:radial-gradient(ellipse at 50% 45%,#40301e 0%,#1c1916 40%,#0b0d10 85%)}

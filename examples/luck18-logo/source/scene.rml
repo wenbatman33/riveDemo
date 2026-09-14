@@ -1,0 +1,194 @@
+<Rive version="1" kind="fragment">
+  <Artboard name="Luck18" id="0:111" width="800" height="600" viewModelId="0:101" viewModelInstanceId="0:102" defaultStateMachineId="0:103">
+    <Node name="LogoPivot" id="0:112" x="400" y="300">
+      <DataBindContext sourcePathIds="0:101-0:109" propertyKey="16" />
+      <DataBindContext sourcePathIds="0:101-0:110" propertyKey="17" />
+      <Node name="Front" id="0:113" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:114" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:115" />
+        <Image name="OriginalLogo" id="0:116" assetId="0:105" scaleX="1.7" scaleY="1.7" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion01" id="0:117" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:118" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:119" />
+        <Image name="CharcoalSide" id="0:120" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion02" id="0:121" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:122" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:123" />
+        <Image name="CharcoalSide" id="0:124" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion03" id="0:125" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:126" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:127" />
+        <Image name="CharcoalSide" id="0:128" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion04" id="0:129" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:130" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:131" />
+        <Image name="CharcoalSide" id="0:132" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion05" id="0:133" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:134" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:135" />
+        <Image name="CharcoalSide" id="0:136" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion06" id="0:137" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:138" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:139" />
+        <Image name="CharcoalSide" id="0:140" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion07" id="0:141" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:142" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:143" />
+        <Image name="CharcoalSide" id="0:144" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion08" id="0:145" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:146" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:147" />
+        <Image name="CharcoalSide" id="0:148" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion09" id="0:149" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:150" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:151" />
+        <Image name="CharcoalSide" id="0:152" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion10" id="0:153" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:154" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:155" />
+        <Image name="CharcoalSide" id="0:156" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion11" id="0:157" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:158" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:159" />
+        <Image name="CharcoalSide" id="0:160" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion12" id="0:161" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:162" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:163" />
+        <Image name="CharcoalSide" id="0:164" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion13" id="0:165" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:166" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:167" />
+        <Image name="CharcoalSide" id="0:168" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion14" id="0:169" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:170" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:171" />
+        <Image name="CharcoalSide" id="0:172" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion15" id="0:173" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:174" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:175" />
+        <Image name="CharcoalSide" id="0:176" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion16" id="0:177" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:178" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:179" />
+        <Image name="CharcoalSide" id="0:180" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion17" id="0:181" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:182" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:183" />
+        <Image name="CharcoalSide" id="0:184" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion18" id="0:185" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:186" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:187" />
+        <Image name="CharcoalSide" id="0:188" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion19" id="0:189" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:190" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:191" />
+        <Image name="CharcoalSide" id="0:192" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion20" id="0:193" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:194" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:195" />
+        <Image name="CharcoalSide" id="0:196" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion21" id="0:197" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:198" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:199" />
+        <Image name="CharcoalSide" id="0:200" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+      <Node name="Extrusion22" id="0:201" opacity="1">
+        <DataBindContext sourcePathIds="0:101-0:107" propertyKey="13" converterId="0:202" />
+        <DataBindContext sourcePathIds="0:101-0:108" propertyKey="14" converterId="0:203" />
+        <Image name="CharcoalSide" id="0:204" assetId="0:106" scaleX="0.26288659793814434" scaleY="0.24943231441048036" originX="0.5" originY="0.5" />
+      </Node>
+    </Node>
+    <LinearAnimation id="0:104" name="Hold" duration="60" loopValue="loop" />
+    <StateMachine id="0:103" name="LogoController">
+      <StateMachineLayer name="Parallax">
+        <AnyState x="0" y="-120" />
+        <ExitState x="220" y="-120" />
+        <EntryState x="-200" y="0">
+          <StateTransition stateToId="0:205" />
+        </EntryState>
+        <AnimationState id="0:205" animationId="0:104" x="200" y="0" />
+      </StateMachineLayer>
+    </StateMachine>
+  </Artboard>
+  <DataConverterRangeMapper name="pointerX_0" id="0:114" minInput="-1" maxInput="1" minOutput="-19.0" maxOutput="19.0" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_0" id="0:115" minInput="-1" maxInput="1" minOutput="-14.0" maxOutput="14.0" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_1" id="0:118" minInput="-1" maxInput="1" minOutput="-18.59090909090909" maxOutput="17.681818181818183" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_1" id="0:119" minInput="-1" maxInput="1" minOutput="-12.818181818181818" maxOutput="13.909090909090908" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_2" id="0:122" minInput="-1" maxInput="1" minOutput="-18.181818181818183" maxOutput="16.363636363636363" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_2" id="0:123" minInput="-1" maxInput="1" minOutput="-11.636363636363635" maxOutput="13.818181818181818" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_3" id="0:126" minInput="-1" maxInput="1" minOutput="-17.772727272727273" maxOutput="15.045454545454547" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_3" id="0:127" minInput="-1" maxInput="1" minOutput="-10.454545454545455" maxOutput="13.727272727272728" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_4" id="0:130" minInput="-1" maxInput="1" minOutput="-17.363636363636363" maxOutput="13.727272727272727" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_4" id="0:131" minInput="-1" maxInput="1" minOutput="-9.27272727272727" maxOutput="13.636363636363637" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_5" id="0:134" minInput="-1" maxInput="1" minOutput="-16.954545454545453" maxOutput="12.409090909090908" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_5" id="0:135" minInput="-1" maxInput="1" minOutput="-8.09090909090909" maxOutput="13.545454545454547" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_6" id="0:138" minInput="-1" maxInput="1" minOutput="-16.545454545454547" maxOutput="11.090909090909092" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_6" id="0:139" minInput="-1" maxInput="1" minOutput="-6.909090909090909" maxOutput="13.454545454545453" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_7" id="0:142" minInput="-1" maxInput="1" minOutput="-16.136363636363637" maxOutput="9.772727272727273" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_7" id="0:143" minInput="-1" maxInput="1" minOutput="-5.727272727272729" maxOutput="13.363636363636363" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_8" id="0:146" minInput="-1" maxInput="1" minOutput="-15.727272727272727" maxOutput="8.454545454545453" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_8" id="0:147" minInput="-1" maxInput="1" minOutput="-4.545454545454545" maxOutput="13.272727272727272" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_9" id="0:150" minInput="-1" maxInput="1" minOutput="-15.318181818181818" maxOutput="7.136363636363635" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_9" id="0:151" minInput="-1" maxInput="1" minOutput="-3.3636363636363615" maxOutput="13.181818181818182" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_10" id="0:154" minInput="-1" maxInput="1" minOutput="-14.90909090909091" maxOutput="5.8181818181818175" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_10" id="0:155" minInput="-1" maxInput="1" minOutput="-2.1818181818181808" maxOutput="13.09090909090909" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_11" id="0:158" minInput="-1" maxInput="1" minOutput="-14.5" maxOutput="4.5" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_11" id="0:159" minInput="-1" maxInput="1" minOutput="-1.0" maxOutput="13.0" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_12" id="0:162" minInput="-1" maxInput="1" minOutput="-14.09090909090909" maxOutput="3.1818181818181825" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_12" id="0:163" minInput="-1" maxInput="1" minOutput="0.18181818181818077" maxOutput="12.90909090909091" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_13" id="0:166" minInput="-1" maxInput="1" minOutput="-13.681818181818182" maxOutput="1.8636363636363633" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_13" id="0:167" minInput="-1" maxInput="1" minOutput="1.363636363636365" maxOutput="12.818181818181818" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_14" id="0:170" minInput="-1" maxInput="1" minOutput="-13.272727272727273" maxOutput="0.5454545454545459" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_14" id="0:171" minInput="-1" maxInput="1" minOutput="2.545454545454546" maxOutput="12.727272727272727" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_15" id="0:174" minInput="-1" maxInput="1" minOutput="-12.863636363636363" maxOutput="-0.7727272727272707" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_15" id="0:175" minInput="-1" maxInput="1" minOutput="3.7272727272727266" maxOutput="12.636363636363637" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_16" id="0:178" minInput="-1" maxInput="1" minOutput="-12.454545454545455" maxOutput="-2.0909090909090917" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_16" id="0:179" minInput="-1" maxInput="1" minOutput="4.909090909090908" maxOutput="12.545454545454545" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_17" id="0:182" minInput="-1" maxInput="1" minOutput="-12.045454545454545" maxOutput="-3.4090909090909083" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_17" id="0:183" minInput="-1" maxInput="1" minOutput="6.090909090909092" maxOutput="12.454545454545455" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_18" id="0:186" minInput="-1" maxInput="1" minOutput="-11.636363636363635" maxOutput="-4.727272727272728" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_18" id="0:187" minInput="-1" maxInput="1" minOutput="7.272727272727273" maxOutput="12.363636363636363" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_19" id="0:190" minInput="-1" maxInput="1" minOutput="-11.227272727272727" maxOutput="-6.045454545454546" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_19" id="0:191" minInput="-1" maxInput="1" minOutput="8.454545454545455" maxOutput="12.272727272727272" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_20" id="0:194" minInput="-1" maxInput="1" minOutput="-10.818181818181818" maxOutput="-7.3636363636363615" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_20" id="0:195" minInput="-1" maxInput="1" minOutput="9.636363636363635" maxOutput="12.181818181818182" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_21" id="0:198" minInput="-1" maxInput="1" minOutput="-10.40909090909091" maxOutput="-8.681818181818183" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_21" id="0:199" minInput="-1" maxInput="1" minOutput="10.81818181818182" maxOutput="12.09090909090909" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerX_22" id="0:202" minInput="-1" maxInput="1" minOutput="-10.0" maxOutput="-10.0" clampLower="true" clampUpper="true" />
+  <DataConverterRangeMapper name="pointerY_22" id="0:203" minInput="-1" maxInput="1" minOutput="12.0" maxOutput="12.0" clampLower="true" clampUpper="true" />
+  <ViewModel id="0:101" name="LogoModel" defaultInstanceId="0:102">
+    <ViewModelPropertyNumber name="pointerX" id="0:107" />
+    <ViewModelPropertyNumber name="pointerY" id="0:108" />
+    <ViewModelPropertyNumber name="scaleX" id="0:109" />
+    <ViewModelPropertyNumber name="scaleY" id="0:110" />
+    <ViewModelInstance id="0:102" name="Default" exports="true">
+      <ViewModelInstanceNumber viewModelPropertyId="0:107" propertyValue="0" />
+      <ViewModelInstanceNumber viewModelPropertyId="0:108" propertyValue="0" />
+      <ViewModelInstanceNumber viewModelPropertyId="0:109" propertyValue="1" />
+      <ViewModelInstanceNumber viewModelPropertyId="0:110" propertyValue="1" />
+    </ViewModelInstance>
+  </ViewModel>
+  <ImageAsset id="0:105" name="Original18Shield" file="../assets/logo.png" />
+  <ImageAsset id="0:106" name="CharcoalShield" file="../assets/depth-charcoal.png" />
+</Rive>
