@@ -121,24 +121,29 @@ async function loadGrid(d, token) {
   viewer.prepend(grid);
   request = new AbortController();
   try {
-    const response = await fetch(d.src, { signal: request.signal });
-    if (!response.ok) throw new Error('HTTP ' + response.status);
-    const buffer = await response.arrayBuffer();
-    if (token !== generation) return;
+    const signal = request.signal;
     let loaded = 0;
     let failed = false;
-    for (const item of d.items) {
+    await Promise.all(d.items.map(async (item) => {
       const tile = document.createElement('button');
       tile.className = 'icon-tile';
       tile.setAttribute('aria-label', item.title);
-      tile.setAttribute('aria-pressed', 'false');
+      tile.setAttribute('aria-pressed', String(item === d.items[0]));
       const canvas = document.createElement('canvas');
       tile.append(canvas);
       grid.append(tile);
       tile.onclick = () => {
         grid.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b === tile)));
         $('#status').textContent = '已選取：' + item.title;
+        $('#download').href = item.src;
+        $('#download').textContent = '下載 ' + item.title + ' .riv';
       };
+      const url = new URL(item.src, location.href);
+      if (d.version) url.searchParams.set('v', d.version);
+      const response = await fetch(url, { signal });
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      const buffer = await response.arrayBuffer();
+      if (token !== generation) return;
       const p = new rive.Rive({
         buffer, canvas, artboard: item.id, stateMachine: 'State Machine 1', autoplay: true,
         layout: new rive.Layout({ fit: rive.Fit.Cover, alignment: rive.Alignment.Center }),
@@ -151,7 +156,7 @@ async function loadGrid(d, token) {
         onLoadError() { failed = true; fail('部分封面載入失敗，請重新整理。', token); },
       });
       players.push(p);
-    }
+    }));
   } catch (error) {
     if (error.name !== 'AbortError') fail('封面載入失敗，請重新整理。', token);
   }
@@ -175,7 +180,8 @@ function selectDemo(next, updateUrl = true, selection = 0) {
   $('#note').textContent = d.note || '';
   $('#count').textContent = `${String(index + 1).padStart(2, '0')} / ${String(catalog.length).padStart(2, '0')}`;
   $('#status').textContent = '載入中';
-  $('#download').href = d.src;
+  $('#download').href = d.kind === 'grid' ? d.items[0].src : d.src;
+  $('#download').textContent = d.kind === 'grid' ? '下載 ' + d.items[0].title + ' .riv' : '下載 .riv';
   $('#editable').hidden = !d.editable;
   if (d.editable) $('#editable').href = d.editable;
   document.title = d.title + ' · Motion Library';

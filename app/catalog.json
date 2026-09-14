@@ -140,48 +140,57 @@
   },
   {
     "id": "game-icons",
+    "version": "webp78-1",
     "title": "遊戲大廳",
     "description": "九款動畫封面，在同一頁探索。",
     "short": "九款封面 · Rive 動畫",
-    "src": "./examples/game-icons/animation.riv",
     "kind": "grid",
-    "note": "移到封面上可查看互動；點擊僅顯示選取狀態，尚未連接實際遊戲。",
+    "note": "九款封面各自載入獨立 .riv。點選封面後，可下載該款檔案；尚未連接實際遊戲。",
     "items": [
       {
         "id": "vampire",
-        "title": "惡魔血域"
+        "title": "惡魔血域",
+        "src": "./examples/game-icons/vampire.riv"
       },
       {
         "id": "fire",
-        "title": "烈焰一路發"
+        "title": "烈焰一路發",
+        "src": "./examples/game-icons/fire.riv"
       },
       {
         "id": "egypt",
-        "title": "戰神賽特"
+        "title": "戰神賽特",
+        "src": "./examples/game-icons/egypt.riv"
       },
       {
         "id": "zeus",
-        "title": "奧林帕斯財運"
+        "title": "奧林帕斯財運",
+        "src": "./examples/game-icons/zeus.riv"
       },
       {
         "id": "aztec",
-        "title": "阿茲特克狂潮"
+        "title": "阿茲特克狂潮",
+        "src": "./examples/game-icons/aztec.riv"
       },
       {
         "id": "west",
-        "title": "荒野槍客2"
+        "title": "荒野槍客2",
+        "src": "./examples/game-icons/west.riv"
       },
       {
         "id": "tiger",
-        "title": "虎小妹"
+        "title": "虎小妹",
+        "src": "./examples/game-icons/tiger.riv"
       },
       {
         "id": "cards",
-        "title": "奇蹟王牌"
+        "title": "奇蹟王牌",
+        "src": "./examples/game-icons/cards.riv"
       },
       {
         "id": "mahjong",
-        "title": "美女麻將"
+        "title": "美女麻將",
+        "src": "./examples/game-icons/mahjong.riv"
       }
     ]
   },

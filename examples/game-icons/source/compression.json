@@ -1,0 +1,56 @@
+[
+  {
+    "name": "vampire",
+    "before": 254994,
+    "after": 211034,
+    "savedPercent": 17.2
+  },
+  {
+    "name": "fire",
+    "before": 383205,
+    "after": 321067,
+    "savedPercent": 16.2
+  },
+  {
+    "name": "egypt",
+    "before": 298242,
+    "after": 249810,
+    "savedPercent": 16.2
+  },
+  {
+    "name": "zeus",
+    "before": 301293,
+    "after": 254823,
+    "savedPercent": 15.4
+  },
+  {
+    "name": "aztec",
+    "before": 424532,
+    "after": 370956,
+    "savedPercent": 12.6
+  },
+  {
+    "name": "west",
+    "before": 297399,
+    "after": 249783,
+    "savedPercent": 16.0
+  },
+  {
+    "name": "tiger",
+    "before": 275260,
+    "after": 235236,
+    "savedPercent": 14.5
+  },
+  {
+    "name": "cards",
+    "before": 328443,
+    "after": 280647,
+    "savedPercent": 14.6
+  },
+  {
+    "name": "mahjong",
+    "before": 273504,
+    "after": 229644,
+    "savedPercent": 16.0
+  }
+]
